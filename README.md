@@ -1,2 +1,2 @@
-# tec498-problema1
-Implementação do Problema 1 da disciplina TEC498
+# tec498-problema2
+Implementação do Problema 2 da disciplina TEC498
