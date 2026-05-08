@@ -1,0 +1,954 @@
+Analysis & Synthesis report for Lab1
+Fri May  8 14:32:34 2026
+Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: count5bit:f_counter|debouncer:deb
+ 11. Parameter Settings for User Entity Instance: count5bit:t_counter|debouncer:deb
+ 12. Parameter Settings for User Entity Instance: count5bit:p_counter|debouncer:deb
+ 13. Parameter Settings for User Entity Instance: count5bit:l_counter|debouncer:deb
+ 14. Port Connectivity Checks: "count2bit:clock_painel|jk_ff:ff1"
+ 15. Port Connectivity Checks: "count2bit:clock_painel|jk_ff:ff0"
+ 16. Port Connectivity Checks: "count5bit:f_counter|jk_ff:ff4"
+ 17. Port Connectivity Checks: "count5bit:f_counter|jk_ff:ff3"
+ 18. Port Connectivity Checks: "count5bit:f_counter|jk_ff:ff2"
+ 19. Port Connectivity Checks: "count5bit:f_counter|jk_ff:ff1"
+ 20. Port Connectivity Checks: "count5bit:f_counter|jk_ff:ff0"
+ 21. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff26"
+ 22. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff25"
+ 23. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff24"
+ 24. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff23"
+ 25. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff22"
+ 26. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff21"
+ 27. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff20"
+ 28. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff19"
+ 29. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff18"
+ 30. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff17"
+ 31. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff16"
+ 32. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff15"
+ 33. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff14"
+ 34. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff13"
+ 35. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff12"
+ 36. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff11"
+ 37. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff10"
+ 38. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff09"
+ 39. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff08"
+ 40. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff07"
+ 41. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff06"
+ 42. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff05"
+ 43. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff04"
+ 44. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff03"
+ 45. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff02"
+ 46. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff01"
+ 47. Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff00"
+ 48. Port Connectivity Checks: "main:prob1_sys|mux4i7w7o:O_GRANDE_MUX"
+ 49. Port Connectivity Checks: "main:prob1_sys|mux4i4w4o:o_pequeno_mux"
+ 50. Post-Synthesis Netlist Statistics for Top Partition
+ 51. Elapsed Time Per Partition
+ 52. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri May  8 14:32:34 2026          ;
+; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
+; Revision Name                      ; Lab1                                           ;
+; Top-level Entity Name              ; prob2_sys                                      ;
+; Family                             ; MAX 10                                         ;
+; Total logic elements               ; 260                                            ;
+;     Total combinational functions  ; 256                                            ;
+;     Dedicated logic registers      ; 141                                            ;
+; Total registers                    ; 141                                            ;
+; Total pins                         ; 41                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; prob2_sys          ; Lab1               ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processors 3-6         ;   0.1%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+; prob2_sys.v                      ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/prob2_sys.v         ;         ;
+; count5bit.v                      ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/count5bit.v         ;         ;
+; jk_ff.v                          ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/jk_ff.v             ;         ;
+; sensor2alert.v                   ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/sensor2alert.v      ;         ;
+; alert2disp.v                     ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/alert2disp.v        ;         ;
+; sensor2bin.v                     ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/sensor2bin.v        ;         ;
+; mux4i1o.v                        ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/mux4i1o.v           ;         ;
+; mux4i7w7o.v                      ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/mux4i7w7o.v         ;         ;
+; main.v                           ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/main.v              ;         ;
+; mux4i4w4o.v                      ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/mux4i4w4o.v         ;         ;
+; alert2leds.v                     ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/alert2leds.v        ;         ;
+; bin2bcd.v                        ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/bin2bcd.v           ;         ;
+; divfreq50m.v                     ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/divfreq50m.v        ;         ;
+; mux4i5w.v                        ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/mux4i5w.v           ;         ;
+; count2bit.v                      ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/count2bit.v         ;         ;
+; sensor2disp.v                    ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/sensor2disp.v       ;         ;
+; conv_who_overflow.v              ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/conv_who_overflow.v ;         ;
+; mux2i1w.v                        ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/mux2i1w.v           ;         ;
+; mux2i2w.v                        ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/mux2i2w.v           ;         ;
+; debouncer.v                      ; yes             ; User Verilog HDL File  ; /home/aluno/Área de trabalho/tec498-problema1/src/debouncer.v         ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 260         ;
+;                                             ;             ;
+; Total combinational functions               ; 256         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 101         ;
+;     -- 3 input functions                    ; 10          ;
+;     -- <=2 input functions                  ; 145         ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 180         ;
+;     -- arithmetic mode                      ; 76          ;
+;                                             ;             ;
+; Total registers                             ; 141         ;
+;     -- Dedicated logic registers            ; 141         ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 41          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; reset~input ;
+; Maximum fan-out                             ; 112         ;
+; Total fan-out                               ; 1243        ;
+; Average fan-out                             ; 2.59        ;
++---------------------------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                            ;
++---------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node                  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                           ; Entity Name  ; Library Name ;
++---------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------+--------------+--------------+
+; |prob2_sys                                  ; 256 (46)            ; 141 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 41   ; 0            ; 0          ; |prob2_sys                                                    ; prob2_sys    ; work         ;
+;    |bin2bcd:codificador_bcd|                ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|bin2bcd:codificador_bcd                            ; bin2bcd      ; work         ;
+;    |count2bit:clock_painel|                 ; 2 (0)               ; 2 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count2bit:clock_painel                             ; count2bit    ; work         ;
+;       |jk_ff:ff0|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count2bit:clock_painel|jk_ff:ff0                   ; jk_ff        ; work         ;
+;       |jk_ff:ff1|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count2bit:clock_painel|jk_ff:ff1                   ; jk_ff        ; work         ;
+;    |count5bit:f_counter|                    ; 32 (1)              ; 28 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:f_counter                                ; count5bit    ; work         ;
+;       |debouncer:deb|                       ; 26 (26)             ; 23 (23)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:f_counter|debouncer:deb                  ; debouncer    ; work         ;
+;       |jk_ff:ff0|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:f_counter|jk_ff:ff0                      ; jk_ff        ; work         ;
+;       |jk_ff:ff1|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:f_counter|jk_ff:ff1                      ; jk_ff        ; work         ;
+;       |jk_ff:ff2|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:f_counter|jk_ff:ff2                      ; jk_ff        ; work         ;
+;       |jk_ff:ff3|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:f_counter|jk_ff:ff3                      ; jk_ff        ; work         ;
+;       |jk_ff:ff4|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:f_counter|jk_ff:ff4                      ; jk_ff        ; work         ;
+;    |count5bit:l_counter|                    ; 32 (1)              ; 28 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:l_counter                                ; count5bit    ; work         ;
+;       |debouncer:deb|                       ; 26 (26)             ; 23 (23)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:l_counter|debouncer:deb                  ; debouncer    ; work         ;
+;       |jk_ff:ff0|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:l_counter|jk_ff:ff0                      ; jk_ff        ; work         ;
+;       |jk_ff:ff1|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:l_counter|jk_ff:ff1                      ; jk_ff        ; work         ;
+;       |jk_ff:ff2|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:l_counter|jk_ff:ff2                      ; jk_ff        ; work         ;
+;       |jk_ff:ff3|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:l_counter|jk_ff:ff3                      ; jk_ff        ; work         ;
+;       |jk_ff:ff4|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:l_counter|jk_ff:ff4                      ; jk_ff        ; work         ;
+;    |count5bit:p_counter|                    ; 32 (1)              ; 28 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:p_counter                                ; count5bit    ; work         ;
+;       |debouncer:deb|                       ; 26 (26)             ; 23 (23)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:p_counter|debouncer:deb                  ; debouncer    ; work         ;
+;       |jk_ff:ff0|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:p_counter|jk_ff:ff0                      ; jk_ff        ; work         ;
+;       |jk_ff:ff1|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:p_counter|jk_ff:ff1                      ; jk_ff        ; work         ;
+;       |jk_ff:ff2|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:p_counter|jk_ff:ff2                      ; jk_ff        ; work         ;
+;       |jk_ff:ff3|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:p_counter|jk_ff:ff3                      ; jk_ff        ; work         ;
+;       |jk_ff:ff4|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:p_counter|jk_ff:ff4                      ; jk_ff        ; work         ;
+;    |count5bit:t_counter|                    ; 32 (1)              ; 28 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:t_counter                                ; count5bit    ; work         ;
+;       |debouncer:deb|                       ; 26 (26)             ; 23 (23)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:t_counter|debouncer:deb                  ; debouncer    ; work         ;
+;       |jk_ff:ff0|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:t_counter|jk_ff:ff0                      ; jk_ff        ; work         ;
+;       |jk_ff:ff1|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:t_counter|jk_ff:ff1                      ; jk_ff        ; work         ;
+;       |jk_ff:ff2|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:t_counter|jk_ff:ff2                      ; jk_ff        ; work         ;
+;       |jk_ff:ff3|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:t_counter|jk_ff:ff3                      ; jk_ff        ; work         ;
+;       |jk_ff:ff4|                           ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|count5bit:t_counter|jk_ff:ff4                      ; jk_ff        ; work         ;
+;    |divfreq50m:divisor|                     ; 31 (4)              ; 27 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor                                 ; divfreq50m   ; work         ;
+;       |jk_ff:ff00|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff00                      ; jk_ff        ; work         ;
+;       |jk_ff:ff01|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff01                      ; jk_ff        ; work         ;
+;       |jk_ff:ff02|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff02                      ; jk_ff        ; work         ;
+;       |jk_ff:ff03|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff03                      ; jk_ff        ; work         ;
+;       |jk_ff:ff04|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff04                      ; jk_ff        ; work         ;
+;       |jk_ff:ff05|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff05                      ; jk_ff        ; work         ;
+;       |jk_ff:ff06|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff06                      ; jk_ff        ; work         ;
+;       |jk_ff:ff07|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff07                      ; jk_ff        ; work         ;
+;       |jk_ff:ff08|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff08                      ; jk_ff        ; work         ;
+;       |jk_ff:ff09|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff09                      ; jk_ff        ; work         ;
+;       |jk_ff:ff10|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff10                      ; jk_ff        ; work         ;
+;       |jk_ff:ff11|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff11                      ; jk_ff        ; work         ;
+;       |jk_ff:ff12|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff12                      ; jk_ff        ; work         ;
+;       |jk_ff:ff13|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff13                      ; jk_ff        ; work         ;
+;       |jk_ff:ff14|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff14                      ; jk_ff        ; work         ;
+;       |jk_ff:ff15|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff15                      ; jk_ff        ; work         ;
+;       |jk_ff:ff16|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff16                      ; jk_ff        ; work         ;
+;       |jk_ff:ff17|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff17                      ; jk_ff        ; work         ;
+;       |jk_ff:ff18|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff18                      ; jk_ff        ; work         ;
+;       |jk_ff:ff19|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff19                      ; jk_ff        ; work         ;
+;       |jk_ff:ff20|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff20                      ; jk_ff        ; work         ;
+;       |jk_ff:ff21|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff21                      ; jk_ff        ; work         ;
+;       |jk_ff:ff22|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff22                      ; jk_ff        ; work         ;
+;       |jk_ff:ff23|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff23                      ; jk_ff        ; work         ;
+;       |jk_ff:ff24|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff24                      ; jk_ff        ; work         ;
+;       |jk_ff:ff25|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff25                      ; jk_ff        ; work         ;
+;       |jk_ff:ff26|                          ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|divfreq50m:divisor|jk_ff:ff26                      ; jk_ff        ; work         ;
+;    |main:prob1_sys|                         ; 14 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|main:prob1_sys                                     ; main         ; work         ;
+;       |alert2disp:codificadorAlertaDisplay| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|main:prob1_sys|alert2disp:codificadorAlertaDisplay ; alert2disp   ; work         ;
+;       |mux4i7w7o:O_GRANDE_MUX|              ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|main:prob1_sys|mux4i7w7o:O_GRANDE_MUX              ; mux4i7w7o    ; work         ;
+;          |mux4i1o:muxG|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|main:prob1_sys|mux4i7w7o:O_GRANDE_MUX|mux4i1o:muxG ; mux4i1o      ; work         ;
+;       |sensor2alert:conversorAlerta|        ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|main:prob1_sys|sensor2alert:conversorAlerta        ; sensor2alert ; work         ;
+;       |sensor2bin:codificadorHexDisplay|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|main:prob1_sys|sensor2bin:codificadorHexDisplay    ; sensor2bin   ; work         ;
+;    |mux2i2w:show_what_mux|                  ; 2 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|mux2i2w:show_what_mux                              ; mux2i2w      ; work         ;
+;       |mux2i1w:mux0|                        ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|mux2i2w:show_what_mux|mux2i1w:mux0                 ; mux2i1w      ; work         ;
+;       |mux2i1w:mux1|                        ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|mux2i2w:show_what_mux|mux2i1w:mux1                 ; mux2i1w      ; work         ;
+;    |mux4i5w:mux_contador|                   ; 10 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|mux4i5w:mux_contador                               ; mux4i5w      ; work         ;
+;       |mux4i1o:mux_b0|                      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|mux4i5w:mux_contador|mux4i1o:mux_b0                ; mux4i1o      ; work         ;
+;       |mux4i1o:mux_b1|                      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|mux4i5w:mux_contador|mux4i1o:mux_b1                ; mux4i1o      ; work         ;
+;       |mux4i1o:mux_b2|                      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|mux4i5w:mux_contador|mux4i1o:mux_b2                ; mux4i1o      ; work         ;
+;       |mux4i1o:mux_b3|                      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|mux4i5w:mux_contador|mux4i1o:mux_b3                ; mux4i1o      ; work         ;
+;       |mux4i1o:mux_b4|                      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|mux4i5w:mux_contador|mux4i1o:mux_b4                ; mux4i1o      ; work         ;
+;    |sensor2bin:display_dezenas|             ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|sensor2bin:display_dezenas                         ; sensor2bin   ; work         ;
+;    |sensor2bin:display_unidades|            ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|sensor2bin:display_unidades                        ; sensor2bin   ; work         ;
+;    |sensor2disp:display_letra_sensor|       ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |prob2_sys|sensor2disp:display_letra_sensor                   ; sensor2disp  ; work         ;
++---------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 141   ;
+; Number of registers using Synchronous Clear  ; 80    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 139   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |prob2_sys|count5bit:f_counter|debouncer:deb|counter[3] ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |prob2_sys|count5bit:t_counter|debouncer:deb|counter[7] ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |prob2_sys|count5bit:p_counter|debouncer:deb|counter[6] ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |prob2_sys|count5bit:l_counter|debouncer:deb|counter[6] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: count5bit:f_counter|debouncer:deb ;
++------------------+----------+--------------------------------------------------+
+; Parameter Name   ; Value    ; Type                                             ;
++------------------+----------+--------------------------------------------------+
+; CLK_FREQ         ; 50000000 ; Signed Integer                                   ;
+; DEBOUNCE_TIME_MS ; 20       ; Signed Integer                                   ;
++------------------+----------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: count5bit:t_counter|debouncer:deb ;
++------------------+----------+--------------------------------------------------+
+; Parameter Name   ; Value    ; Type                                             ;
++------------------+----------+--------------------------------------------------+
+; CLK_FREQ         ; 50000000 ; Signed Integer                                   ;
+; DEBOUNCE_TIME_MS ; 20       ; Signed Integer                                   ;
++------------------+----------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: count5bit:p_counter|debouncer:deb ;
++------------------+----------+--------------------------------------------------+
+; Parameter Name   ; Value    ; Type                                             ;
++------------------+----------+--------------------------------------------------+
+; CLK_FREQ         ; 50000000 ; Signed Integer                                   ;
+; DEBOUNCE_TIME_MS ; 20       ; Signed Integer                                   ;
++------------------+----------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: count5bit:l_counter|debouncer:deb ;
++------------------+----------+--------------------------------------------------+
+; Parameter Name   ; Value    ; Type                                             ;
++------------------+----------+--------------------------------------------------+
+; CLK_FREQ         ; 50000000 ; Signed Integer                                   ;
+; DEBOUNCE_TIME_MS ; 20       ; Signed Integer                                   ;
++------------------+----------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "count2bit:clock_painel|jk_ff:ff1"                                                                         ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; j     ; Input  ; Info     ; Stuck at VCC                                                                                             ;
+; k     ; Input  ; Info     ; Stuck at VCC                                                                                             ;
+; q_bar ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "count2bit:clock_painel|jk_ff:ff0" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                       ;
+; k    ; Input ; Info     ; Stuck at VCC                       ;
++------+-------+----------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "count5bit:f_counter|jk_ff:ff4"                                                       ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; j     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q_bar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "count5bit:f_counter|jk_ff:ff3" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                    ;
+; k    ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "count5bit:f_counter|jk_ff:ff2" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                    ;
+; k    ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "count5bit:f_counter|jk_ff:ff1" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                    ;
+; k    ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "count5bit:f_counter|jk_ff:ff0" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                    ;
+; k    ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff26"                                                       ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; j     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q_bar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff25"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; j    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff24" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                    ;
+; k    ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff23" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                    ;
+; k    ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff22" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                    ;
+; k    ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff21" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                    ;
+; k    ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff20" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                    ;
+; k    ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff19"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; j    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff18" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                    ;
+; k    ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff17"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; j    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff16" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                    ;
+; k    ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff15" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                    ;
+; k    ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff14" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                    ;
+; k    ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff13" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                    ;
+; k    ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff12"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; j    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff11"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; j    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff10"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; j    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff09"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; j    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff08" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                    ;
+; k    ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff07"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; j    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff06"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; j    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff05"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; j    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff04"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; j    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff03"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; j    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff02"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; j    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff01"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; j    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divfreq50m:divisor|jk_ff:ff00"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; j    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; k    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "main:prob1_sys|mux4i7w7o:O_GRANDE_MUX" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; a2   ; Input ; Info     ; Stuck at GND                            ;
+; b2   ; Input ; Info     ; Stuck at VCC                            ;
+; c2   ; Input ; Info     ; Stuck at GND                            ;
+; d2   ; Input ; Info     ; Stuck at VCC                            ;
+; e2   ; Input ; Info     ; Stuck at GND                            ;
+; f2   ; Input ; Info     ; Stuck at VCC                            ;
+; g2   ; Input ; Info     ; Stuck at GND                            ;
+; a3   ; Input ; Info     ; Stuck at GND                            ;
+; b3   ; Input ; Info     ; Stuck at VCC                            ;
+; c3   ; Input ; Info     ; Stuck at VCC                            ;
+; d3   ; Input ; Info     ; Stuck at VCC                            ;
+; e3   ; Input ; Info     ; Stuck at GND                            ;
+; f3   ; Input ; Info     ; Stuck at GND                            ;
+; g3   ; Input ; Info     ; Stuck at GND                            ;
++------+-------+----------+-----------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "main:prob1_sys|mux4i4w4o:o_pequeno_mux" ;
++--------+-------+----------+----------------------------------------+
+; Port   ; Type  ; Severity ; Details                                ;
++--------+-------+----------+----------------------------------------+
+; led3_2 ; Input ; Info     ; Stuck at VCC                           ;
+; led2_2 ; Input ; Info     ; Stuck at VCC                           ;
+; led1_2 ; Input ; Info     ; Stuck at VCC                           ;
+; led0_2 ; Input ; Info     ; Stuck at VCC                           ;
+; led3_3 ; Input ; Info     ; Stuck at GND                           ;
+; led2_3 ; Input ; Info     ; Stuck at VCC                           ;
+; led1_3 ; Input ; Info     ; Stuck at GND                           ;
+; led0_3 ; Input ; Info     ; Stuck at GND                           ;
++--------+-------+----------+----------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 41                          ;
+; cycloneiii_ff         ; 141                         ;
+;     CLR               ; 59                          ;
+;     CLR SCLR          ; 80                          ;
+;     plain             ; 2                           ;
+; cycloneiii_lcell_comb ; 261                         ;
+;     arith             ; 76                          ;
+;         2 data inputs ; 76                          ;
+;     normal            ; 185                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 56                          ;
+;         2 data inputs ; 16                          ;
+;         3 data inputs ; 10                          ;
+;         4 data inputs ; 101                         ;
+;                       ;                             ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 3.22                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+    Info: Processing started: Fri May  8 14:32:28 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab1 -c Lab1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file prob2_sys.v
+    Info (12023): Found entity 1: prob2_sys File: /home/aluno/Área de trabalho/tec498-problema1/src/prob2_sys.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file count5bit.v
+    Info (12023): Found entity 1: count5bit File: /home/aluno/Área de trabalho/tec498-problema1/src/count5bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file jk_ff.v
+    Info (12023): Found entity 1: jk_ff File: /home/aluno/Área de trabalho/tec498-problema1/src/jk_ff.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sensor2alert.v
+    Info (12023): Found entity 1: sensor2alert File: /home/aluno/Área de trabalho/tec498-problema1/src/sensor2alert.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alert2disp.v
+    Info (12023): Found entity 1: alert2disp File: /home/aluno/Área de trabalho/tec498-problema1/src/alert2disp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sensor2bin.v
+    Info (12023): Found entity 1: sensor2bin File: /home/aluno/Área de trabalho/tec498-problema1/src/sensor2bin.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux4i1o.v
+    Info (12023): Found entity 1: mux4i1o File: /home/aluno/Área de trabalho/tec498-problema1/src/mux4i1o.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux4i7w7o.v
+    Info (12023): Found entity 1: mux4i7w7o File: /home/aluno/Área de trabalho/tec498-problema1/src/mux4i7w7o.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file main.v
+    Info (12023): Found entity 1: main File: /home/aluno/Área de trabalho/tec498-problema1/src/main.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux4i4w4o.v
+    Info (12023): Found entity 1: mux4i4w4o File: /home/aluno/Área de trabalho/tec498-problema1/src/mux4i4w4o.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alert2leds.v
+    Info (12023): Found entity 1: alert2leds File: /home/aluno/Área de trabalho/tec498-problema1/src/alert2leds.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bin2bcd.v
+    Info (12023): Found entity 1: bin2bcd File: /home/aluno/Área de trabalho/tec498-problema1/src/bin2bcd.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file divfreq50m.v
+    Info (12023): Found entity 1: divfreq50m File: /home/aluno/Área de trabalho/tec498-problema1/src/divfreq50m.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux4i5w.v
+    Info (12023): Found entity 1: mux4i5w File: /home/aluno/Área de trabalho/tec498-problema1/src/mux4i5w.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file count2bit.v
+    Info (12023): Found entity 1: count2bit File: /home/aluno/Área de trabalho/tec498-problema1/src/count2bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sensor2disp.v
+    Info (12023): Found entity 1: sensor2disp File: /home/aluno/Área de trabalho/tec498-problema1/src/sensor2disp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file conv_who_overflow.v
+    Info (12023): Found entity 1: conv_who_overflow File: /home/aluno/Área de trabalho/tec498-problema1/src/conv_who_overflow.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux2i1w.v
+    Info (12023): Found entity 1: mux2i1w File: /home/aluno/Área de trabalho/tec498-problema1/src/mux2i1w.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux2i2w.v
+    Info (12023): Found entity 1: mux2i2w File: /home/aluno/Área de trabalho/tec498-problema1/src/mux2i2w.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file debouncer.v
+    Info (12023): Found entity 1: debouncer File: /home/aluno/Área de trabalho/tec498-problema1/src/debouncer.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file slowclock.v
+    Info (12023): Found entity 1: slowclock File: /home/aluno/Área de trabalho/tec498-problema1/src/slowclock.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file est_debouncer.v
+    Info (12023): Found entity 1: est_debouncer File: /home/aluno/Área de trabalho/tec498-problema1/src/est_debouncer.v Line: 1
+Info (12127): Elaborating entity "prob2_sys" for the top level hierarchy
+Info (12128): Elaborating entity "main" for hierarchy "main:prob1_sys" File: /home/aluno/Área de trabalho/tec498-problema1/src/prob2_sys.v Line: 92
+Info (12128): Elaborating entity "sensor2alert" for hierarchy "main:prob1_sys|sensor2alert:conversorAlerta" File: /home/aluno/Área de trabalho/tec498-problema1/src/main.v Line: 20
+Info (12128): Elaborating entity "alert2leds" for hierarchy "main:prob1_sys|alert2leds:codificadorAlertaLeds" File: /home/aluno/Área de trabalho/tec498-problema1/src/main.v Line: 31
+Info (12128): Elaborating entity "alert2disp" for hierarchy "main:prob1_sys|alert2disp:codificadorAlertaDisplay" File: /home/aluno/Área de trabalho/tec498-problema1/src/main.v Line: 45
+Info (12128): Elaborating entity "sensor2bin" for hierarchy "main:prob1_sys|sensor2bin:codificadorHexDisplay" File: /home/aluno/Área de trabalho/tec498-problema1/src/main.v Line: 59
+Info (12128): Elaborating entity "mux4i4w4o" for hierarchy "main:prob1_sys|mux4i4w4o:o_pequeno_mux" File: /home/aluno/Área de trabalho/tec498-problema1/src/main.v Line: 91
+Info (12128): Elaborating entity "mux4i1o" for hierarchy "main:prob1_sys|mux4i4w4o:o_pequeno_mux|mux4i1o:muxLed0" File: /home/aluno/Área de trabalho/tec498-problema1/src/mux4i4w4o.v Line: 18
+Info (12128): Elaborating entity "mux4i7w7o" for hierarchy "main:prob1_sys|mux4i7w7o:O_GRANDE_MUX" File: /home/aluno/Área de trabalho/tec498-problema1/src/main.v Line: 139
+Info (12128): Elaborating entity "divfreq50m" for hierarchy "divfreq50m:divisor" File: /home/aluno/Área de trabalho/tec498-problema1/src/prob2_sys.v Line: 98
+Info (12128): Elaborating entity "jk_ff" for hierarchy "divfreq50m:divisor|jk_ff:ff00" File: /home/aluno/Área de trabalho/tec498-problema1/src/divfreq50m.v Line: 18
+Info (12128): Elaborating entity "count5bit" for hierarchy "count5bit:f_counter" File: /home/aluno/Área de trabalho/tec498-problema1/src/prob2_sys.v Line: 110
+Info (12128): Elaborating entity "debouncer" for hierarchy "count5bit:f_counter|debouncer:deb" File: /home/aluno/Área de trabalho/tec498-problema1/src/count5bit.v Line: 17
+Warning (10230): Verilog HDL assignment warning at debouncer.v(38): truncated value with size 32 to match size of target (20) File: /home/aluno/Área de trabalho/tec498-problema1/src/debouncer.v Line: 38
+Info (12128): Elaborating entity "count2bit" for hierarchy "count2bit:clock_painel" File: /home/aluno/Área de trabalho/tec498-problema1/src/prob2_sys.v Line: 147
+Info (12128): Elaborating entity "mux4i5w" for hierarchy "mux4i5w:mux_contador" File: /home/aluno/Área de trabalho/tec498-problema1/src/prob2_sys.v Line: 157
+Info (12128): Elaborating entity "sensor2disp" for hierarchy "sensor2disp:display_letra_sensor" File: /home/aluno/Área de trabalho/tec498-problema1/src/prob2_sys.v Line: 169
+Info (12128): Elaborating entity "conv_who_overflow" for hierarchy "conv_who_overflow:who_of" File: /home/aluno/Área de trabalho/tec498-problema1/src/prob2_sys.v Line: 175
+Info (12128): Elaborating entity "mux2i2w" for hierarchy "mux2i2w:show_what_mux" File: /home/aluno/Área de trabalho/tec498-problema1/src/prob2_sys.v Line: 183
+Info (12128): Elaborating entity "mux2i1w" for hierarchy "mux2i2w:show_what_mux|mux2i1w:mux0" File: /home/aluno/Área de trabalho/tec498-problema1/src/mux2i2w.v Line: 13
+Info (12128): Elaborating entity "bin2bcd" for hierarchy "bin2bcd:codificador_bcd" File: /home/aluno/Área de trabalho/tec498-problema1/src/prob2_sys.v Line: 192
+Info (13014): Ignored 6 buffer(s)
+    Info (13019): Ignored 6 SOFT buffer(s)
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "dezenas_display[1]" is stuck at GND File: /home/aluno/Área de trabalho/tec498-problema1/src/prob2_sys.v Line: 5
+    Warning (13410): Pin "letra_sensor_display[2]" is stuck at VCC File: /home/aluno/Área de trabalho/tec498-problema1/src/prob2_sys.v Line: 8
+    Warning (13410): Pin "letra_sensor_display[5]" is stuck at GND File: /home/aluno/Área de trabalho/tec498-problema1/src/prob2_sys.v Line: 8
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 305 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 264 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 425 megabytes
+    Info: Processing ended: Fri May  8 14:32:34 2026
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:13
+
+

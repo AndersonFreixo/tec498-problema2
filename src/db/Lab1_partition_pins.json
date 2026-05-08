@@ -1,0 +1,161 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "d0a_out",
+					"strict" : false
+				},
+				{
+					"name" : "d0b_out",
+					"strict" : false
+				},
+				{
+					"name" : "d0c_out",
+					"strict" : false
+				},
+				{
+					"name" : "d0d_out",
+					"strict" : false
+				},
+				{
+					"name" : "d0e_out",
+					"strict" : false
+				},
+				{
+					"name" : "d0f_out",
+					"strict" : false
+				},
+				{
+					"name" : "d0g_out",
+					"strict" : false
+				},
+				{
+					"name" : "led3",
+					"strict" : false
+				},
+				{
+					"name" : "led2",
+					"strict" : false
+				},
+				{
+					"name" : "led1",
+					"strict" : false
+				},
+				{
+					"name" : "led0",
+					"strict" : false
+				},
+				{
+					"name" : "of_led",
+					"strict" : false
+				},
+				{
+					"name" : "dezenas_display[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dezenas_display[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dezenas_display[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dezenas_display[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dezenas_display[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dezenas_display[6]",
+					"strict" : false
+				},
+				{
+					"name" : "unidades_display[0]",
+					"strict" : false
+				},
+				{
+					"name" : "unidades_display[1]",
+					"strict" : false
+				},
+				{
+					"name" : "unidades_display[2]",
+					"strict" : false
+				},
+				{
+					"name" : "unidades_display[3]",
+					"strict" : false
+				},
+				{
+					"name" : "unidades_display[4]",
+					"strict" : false
+				},
+				{
+					"name" : "unidades_display[5]",
+					"strict" : false
+				},
+				{
+					"name" : "unidades_display[6]",
+					"strict" : false
+				},
+				{
+					"name" : "letra_sensor_display[0]",
+					"strict" : false
+				},
+				{
+					"name" : "letra_sensor_display[1]",
+					"strict" : false
+				},
+				{
+					"name" : "letra_sensor_display[3]",
+					"strict" : false
+				},
+				{
+					"name" : "letra_sensor_display[4]",
+					"strict" : false
+				},
+				{
+					"name" : "letra_sensor_display[6]",
+					"strict" : false
+				},
+				{
+					"name" : "m0_in",
+					"strict" : false
+				},
+				{
+					"name" : "m1_in",
+					"strict" : false
+				},
+				{
+					"name" : "f_in",
+					"strict" : false
+				},
+				{
+					"name" : "p_in",
+					"strict" : false
+				},
+				{
+					"name" : "t_in",
+					"strict" : false
+				},
+				{
+					"name" : "l_in",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "fpga_clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

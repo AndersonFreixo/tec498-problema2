@@ -1,0 +1,5 @@
+module sensor2bin(    
+    input F, T, P, L, 					            
+    output  a, b, c, d, e, f, g;  
+);
+endmodule

@@ -1,0 +1,1483 @@
+|prob2_sys
+f_in => comb.IN0
+t_in => comb.IN0
+p_in => comb.IN0
+l_in => comb.IN0
+m1_in => m1_in.IN1
+m0_in => m0_in.IN1
+fpga_clk => fpga_clk.IN5
+reset => n_reset.IN4
+d0a_out << comb.DB_MAX_OUTPUT_PORT_TYPE
+d0b_out << comb.DB_MAX_OUTPUT_PORT_TYPE
+d0c_out << comb.DB_MAX_OUTPUT_PORT_TYPE
+d0d_out << comb.DB_MAX_OUTPUT_PORT_TYPE
+d0e_out << comb.DB_MAX_OUTPUT_PORT_TYPE
+d0f_out << comb.DB_MAX_OUTPUT_PORT_TYPE
+d0g_out << comb.DB_MAX_OUTPUT_PORT_TYPE
+led3 << comb.DB_MAX_OUTPUT_PORT_TYPE
+led2 << comb.DB_MAX_OUTPUT_PORT_TYPE
+led1 << comb.DB_MAX_OUTPUT_PORT_TYPE
+led0 << comb.DB_MAX_OUTPUT_PORT_TYPE
+of_led << comb.DB_MAX_OUTPUT_PORT_TYPE
+dezenas_display[0] << sensor2bin:display_dezenas.a_out
+dezenas_display[1] << sensor2bin:display_dezenas.b_out
+dezenas_display[2] << sensor2bin:display_dezenas.c_out
+dezenas_display[3] << sensor2bin:display_dezenas.d_out
+dezenas_display[4] << sensor2bin:display_dezenas.e_out
+dezenas_display[5] << sensor2bin:display_dezenas.f_out
+dezenas_display[6] << sensor2bin:display_dezenas.g_out
+unidades_display[0] << sensor2bin:display_unidades.a_out
+unidades_display[1] << sensor2bin:display_unidades.b_out
+unidades_display[2] << sensor2bin:display_unidades.c_out
+unidades_display[3] << sensor2bin:display_unidades.d_out
+unidades_display[4] << sensor2bin:display_unidades.e_out
+unidades_display[5] << sensor2bin:display_unidades.f_out
+unidades_display[6] << sensor2bin:display_unidades.g_out
+letra_sensor_display[0] << sensor2disp:display_letra_sensor.segs
+letra_sensor_display[1] << sensor2disp:display_letra_sensor.segs
+letra_sensor_display[2] << sensor2disp:display_letra_sensor.segs
+letra_sensor_display[3] << sensor2disp:display_letra_sensor.segs
+letra_sensor_display[4] << sensor2disp:display_letra_sensor.segs
+letra_sensor_display[5] << sensor2disp:display_letra_sensor.segs
+letra_sensor_display[6] << sensor2disp:display_letra_sensor.segs
+
+
+|prob2_sys|main:prob1_sys
+f_in => f_in.IN3
+t_in => t_in.IN3
+p_in => p_in.IN3
+l_in => l_in.IN3
+m1_in => m1_in.IN2
+m0_in => m0_in.IN2
+a <= mux4i7w7o:O_GRANDE_MUX.a_out
+b <= mux4i7w7o:O_GRANDE_MUX.b_out
+c <= mux4i7w7o:O_GRANDE_MUX.c_out
+d <= mux4i7w7o:O_GRANDE_MUX.d_out
+e <= mux4i7w7o:O_GRANDE_MUX.e_out
+f <= mux4i7w7o:O_GRANDE_MUX.f_out
+g <= mux4i7w7o:O_GRANDE_MUX.g_out
+led3 <= mux4i4w4o:o_pequeno_mux.led3_out
+led2 <= mux4i4w4o:o_pequeno_mux.led2_out
+led1 <= mux4i4w4o:o_pequeno_mux.led1_out
+led0 <= mux4i4w4o:o_pequeno_mux.led0_out
+
+
+|prob2_sys|main:prob1_sys|sensor2alert:conversorAlerta
+F_in => FNotT.IN0
+F_in => FP.IN0
+F_in => WideAnd0.IN0
+F_in => WideAnd1.IN0
+F_in => WideAnd2.IN0
+F_in => WideAnd4.IN0
+T_in => TP.IN0
+T_in => WideAnd0.IN1
+T_in => WideAnd1.IN1
+T_in => WideAnd4.IN1
+T_in => FNotT.IN1
+T_in => WideAnd3.IN0
+P_in => FP.IN1
+P_in => TP.IN1
+P_in => WideAnd2.IN1
+P_in => WideAnd0.IN2
+P_in => WideAnd3.IN1
+P_in => WideAnd4.IN2
+L_in => WideAnd2.IN2
+L_in => FPL.IN1
+L_in => WideAnd3.IN2
+L_in => WideAnd4.IN3
+L_in => FNotTNotL.IN1
+L_in => WideAnd1.IN2
+AL3_out <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+AL2_out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+AL1_out <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+AL0_out <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|main:prob1_sys|alert2leds:codificadorAlertaLeds
+AL3_in => comb.IN0
+AL2_in => XorAL2_AL1.IN0
+AL2_in => comb.IN1
+AL2_in => comb.IN0
+AL1_in => XorAL2_AL1.IN1
+AL0_in => comb.IN1
+AL0_in => comb.IN1
+led3_out <= <GND>
+led2_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+led1_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+led0_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|main:prob1_sys|alert2disp:codificadorAlertaDisplay
+AL3_in => WideAnd8.IN0
+AL3_in => WideAnd0.IN0
+AL3_in => WideAnd1.IN0
+AL3_in => WideAnd2.IN0
+AL3_in => WideAnd3.IN0
+AL3_in => WideAnd4.IN0
+AL3_in => WideAnd5.IN0
+AL3_in => WideAnd6.IN0
+AL3_in => WideAnd7.IN0
+AL2_in => WideAnd4.IN1
+AL2_in => WideAnd5.IN1
+AL2_in => WideAnd6.IN1
+AL2_in => WideAnd7.IN1
+AL2_in => WideAnd0.IN1
+AL2_in => WideAnd1.IN1
+AL2_in => WideAnd2.IN1
+AL2_in => WideAnd3.IN1
+AL2_in => WideAnd8.IN1
+AL1_in => WideAnd2.IN2
+AL1_in => WideAnd3.IN2
+AL1_in => WideAnd6.IN2
+AL1_in => WideAnd7.IN2
+AL1_in => WideAnd0.IN2
+AL1_in => WideAnd1.IN2
+AL1_in => WideAnd4.IN2
+AL1_in => WideAnd5.IN2
+AL1_in => WideAnd8.IN2
+AL0_in => WideAnd1.IN3
+AL0_in => WideAnd3.IN3
+AL0_in => WideAnd5.IN3
+AL0_in => WideAnd7.IN3
+AL0_in => WideAnd0.IN3
+AL0_in => WideAnd2.IN3
+AL0_in => WideAnd4.IN3
+AL0_in => WideAnd6.IN3
+AL0_in => WideAnd8.IN3
+a_out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b_out <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d_out <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+f_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+g_out <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|main:prob1_sys|sensor2bin:codificadorHexDisplay
+F => FT.IN0
+F => FNotT.IN0
+F => WideAnd0.IN0
+F => WideAnd2.IN0
+F => WideAnd7.IN0
+F => WideAnd8.IN0
+F => NotFT.IN0
+F => NotFL.IN0
+F => NotFNotT.IN0
+F => WideAnd4.IN0
+F => WideAnd5.IN0
+T => FT.IN1
+T => NotFT.IN1
+T => WideAnd1.IN0
+T => WideAnd2.IN1
+T => WideAnd3.IN0
+T => WideAnd7.IN1
+T => FNotT.IN1
+T => NotFNotT.IN1
+T => WideAnd5.IN1
+T => WideAnd6.IN0
+T => WideAnd8.IN1
+P => FTP.IN1
+P => WideAnd0.IN1
+P => WideAnd1.IN1
+P => WideAnd3.IN1
+P => WideAnd4.IN1
+P => NotFNotTP.IN1
+P => WideAnd8.IN2
+P => WideAnd9.IN1
+P => WideAnd10.IN1
+P => NotPL.IN0
+P => NotPNotL.IN0
+P => NotFTNotP.IN1
+P => WideAnd5.IN2
+P => WideAnd6.IN1
+P => WideAnd7.IN2
+L => NotFL.IN1
+L => NotPL.IN1
+L => WideAnd0.IN2
+L => WideAnd1.IN2
+L => WideAnd4.IN2
+L => NotFNotTL.IN1
+L => WideAnd6.IN2
+L => WideAnd7.IN3
+L => WideAnd8.IN3
+L => WideAnd9.IN2
+L => NotPNotL.IN1
+L => WideAnd2.IN2
+L => WideAnd3.IN2
+L => NotFNotTPNotL.IN1
+L => WideAnd10.IN2
+a_out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b_out <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d_out <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e_out <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f_out <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g_out <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|main:prob1_sys|mux4i4w4o:o_pequeno_mux
+s0 => s0.IN4
+s1 => s1.IN4
+led3_0 => led3_0.IN1
+led2_0 => led2_0.IN1
+led1_0 => led1_0.IN1
+led0_0 => led0_0.IN1
+led3_1 => led3_1.IN1
+led2_1 => led2_1.IN1
+led1_1 => led1_1.IN1
+led0_1 => led0_1.IN1
+led3_2 => led3_2.IN1
+led2_2 => led2_2.IN1
+led1_2 => led1_2.IN1
+led0_2 => led0_2.IN1
+led3_3 => led3_3.IN1
+led2_3 => led2_3.IN1
+led1_3 => led1_3.IN1
+led0_3 => led0_3.IN1
+led3_out <= mux4i1o:muxLed3.out
+led2_out <= mux4i1o:muxLed2.out
+led1_out <= mux4i1o:muxLed1.out
+led0_out <= mux4i1o:muxLed0.out
+
+
+|prob2_sys|main:prob1_sys|mux4i4w4o:o_pequeno_mux|mux4i1o:muxLed0
+i0 => WideAnd0.IN0
+i1 => WideAnd1.IN0
+i2 => WideAnd2.IN0
+i3 => WideAnd3.IN0
+s1 => WideAnd2.IN1
+s1 => WideAnd3.IN1
+s1 => WideAnd0.IN1
+s1 => WideAnd1.IN1
+s0 => WideAnd1.IN2
+s0 => WideAnd3.IN2
+s0 => WideAnd0.IN2
+s0 => WideAnd2.IN2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|main:prob1_sys|mux4i4w4o:o_pequeno_mux|mux4i1o:muxLed1
+i0 => WideAnd0.IN0
+i1 => WideAnd1.IN0
+i2 => WideAnd2.IN0
+i3 => WideAnd3.IN0
+s1 => WideAnd2.IN1
+s1 => WideAnd3.IN1
+s1 => WideAnd0.IN1
+s1 => WideAnd1.IN1
+s0 => WideAnd1.IN2
+s0 => WideAnd3.IN2
+s0 => WideAnd0.IN2
+s0 => WideAnd2.IN2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|main:prob1_sys|mux4i4w4o:o_pequeno_mux|mux4i1o:muxLed2
+i0 => WideAnd0.IN0
+i1 => WideAnd1.IN0
+i2 => WideAnd2.IN0
+i3 => WideAnd3.IN0
+s1 => WideAnd2.IN1
+s1 => WideAnd3.IN1
+s1 => WideAnd0.IN1
+s1 => WideAnd1.IN1
+s0 => WideAnd1.IN2
+s0 => WideAnd3.IN2
+s0 => WideAnd0.IN2
+s0 => WideAnd2.IN2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|main:prob1_sys|mux4i4w4o:o_pequeno_mux|mux4i1o:muxLed3
+i0 => WideAnd0.IN0
+i1 => WideAnd1.IN0
+i2 => WideAnd2.IN0
+i3 => WideAnd3.IN0
+s1 => WideAnd2.IN1
+s1 => WideAnd3.IN1
+s1 => WideAnd0.IN1
+s1 => WideAnd1.IN1
+s0 => WideAnd1.IN2
+s0 => WideAnd3.IN2
+s0 => WideAnd0.IN2
+s0 => WideAnd2.IN2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|main:prob1_sys|mux4i7w7o:O_GRANDE_MUX
+s0 => s0.IN7
+s1 => s1.IN7
+a0 => a0.IN1
+b0 => b0.IN1
+c0 => c0.IN1
+d0 => d0.IN1
+e0 => e0.IN1
+f0 => f0.IN1
+g0 => g0.IN1
+a1 => a1.IN1
+b1 => b1.IN1
+c1 => c1.IN1
+d1 => d1.IN1
+e1 => e1.IN1
+f1 => f1.IN1
+g1 => g1.IN1
+a2 => a2.IN1
+b2 => b2.IN1
+c2 => c2.IN1
+d2 => d2.IN1
+e2 => e2.IN1
+f2 => f2.IN1
+g2 => g2.IN1
+a3 => a3.IN1
+b3 => b3.IN1
+c3 => c3.IN1
+d3 => d3.IN1
+e3 => e3.IN1
+f3 => f3.IN1
+g3 => g3.IN1
+a_out <= mux4i1o:muxA.out
+b_out <= mux4i1o:muxB.out
+c_out <= mux4i1o:muxC.out
+d_out <= mux4i1o:muxD.out
+e_out <= mux4i1o:muxE.out
+f_out <= mux4i1o:muxF.out
+g_out <= mux4i1o:muxG.out
+
+
+|prob2_sys|main:prob1_sys|mux4i7w7o:O_GRANDE_MUX|mux4i1o:muxA
+i0 => WideAnd0.IN0
+i1 => WideAnd1.IN0
+i2 => WideAnd2.IN0
+i3 => WideAnd3.IN0
+s1 => WideAnd2.IN1
+s1 => WideAnd3.IN1
+s1 => WideAnd0.IN1
+s1 => WideAnd1.IN1
+s0 => WideAnd1.IN2
+s0 => WideAnd3.IN2
+s0 => WideAnd0.IN2
+s0 => WideAnd2.IN2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|main:prob1_sys|mux4i7w7o:O_GRANDE_MUX|mux4i1o:muxB
+i0 => WideAnd0.IN0
+i1 => WideAnd1.IN0
+i2 => WideAnd2.IN0
+i3 => WideAnd3.IN0
+s1 => WideAnd2.IN1
+s1 => WideAnd3.IN1
+s1 => WideAnd0.IN1
+s1 => WideAnd1.IN1
+s0 => WideAnd1.IN2
+s0 => WideAnd3.IN2
+s0 => WideAnd0.IN2
+s0 => WideAnd2.IN2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|main:prob1_sys|mux4i7w7o:O_GRANDE_MUX|mux4i1o:muxC
+i0 => WideAnd0.IN0
+i1 => WideAnd1.IN0
+i2 => WideAnd2.IN0
+i3 => WideAnd3.IN0
+s1 => WideAnd2.IN1
+s1 => WideAnd3.IN1
+s1 => WideAnd0.IN1
+s1 => WideAnd1.IN1
+s0 => WideAnd1.IN2
+s0 => WideAnd3.IN2
+s0 => WideAnd0.IN2
+s0 => WideAnd2.IN2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|main:prob1_sys|mux4i7w7o:O_GRANDE_MUX|mux4i1o:muxD
+i0 => WideAnd0.IN0
+i1 => WideAnd1.IN0
+i2 => WideAnd2.IN0
+i3 => WideAnd3.IN0
+s1 => WideAnd2.IN1
+s1 => WideAnd3.IN1
+s1 => WideAnd0.IN1
+s1 => WideAnd1.IN1
+s0 => WideAnd1.IN2
+s0 => WideAnd3.IN2
+s0 => WideAnd0.IN2
+s0 => WideAnd2.IN2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|main:prob1_sys|mux4i7w7o:O_GRANDE_MUX|mux4i1o:muxE
+i0 => WideAnd0.IN0
+i1 => WideAnd1.IN0
+i2 => WideAnd2.IN0
+i3 => WideAnd3.IN0
+s1 => WideAnd2.IN1
+s1 => WideAnd3.IN1
+s1 => WideAnd0.IN1
+s1 => WideAnd1.IN1
+s0 => WideAnd1.IN2
+s0 => WideAnd3.IN2
+s0 => WideAnd0.IN2
+s0 => WideAnd2.IN2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|main:prob1_sys|mux4i7w7o:O_GRANDE_MUX|mux4i1o:muxF
+i0 => WideAnd0.IN0
+i1 => WideAnd1.IN0
+i2 => WideAnd2.IN0
+i3 => WideAnd3.IN0
+s1 => WideAnd2.IN1
+s1 => WideAnd3.IN1
+s1 => WideAnd0.IN1
+s1 => WideAnd1.IN1
+s0 => WideAnd1.IN2
+s0 => WideAnd3.IN2
+s0 => WideAnd0.IN2
+s0 => WideAnd2.IN2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|main:prob1_sys|mux4i7w7o:O_GRANDE_MUX|mux4i1o:muxG
+i0 => WideAnd0.IN0
+i1 => WideAnd1.IN0
+i2 => WideAnd2.IN0
+i3 => WideAnd3.IN0
+s1 => WideAnd2.IN1
+s1 => WideAnd3.IN1
+s1 => WideAnd0.IN1
+s1 => WideAnd1.IN1
+s0 => WideAnd1.IN2
+s0 => WideAnd3.IN2
+s0 => WideAnd0.IN2
+s0 => WideAnd2.IN2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor
+clk => clk.IN1
+pulse <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff00
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff01
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff02
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff03
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff04
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff05
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff06
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff07
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff08
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff09
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff10
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff11
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff12
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff13
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff14
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff15
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff16
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff17
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff18
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff19
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff20
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff21
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff22
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff23
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff24
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff25
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|divfreq50m:divisor|jk_ff:ff26
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:f_counter
+trigger => trigger.IN1
+reset => n_reset.IN6
+clk => clk.IN1
+count[0] <= jk_ff:ff0.q
+count[1] <= jk_ff:ff1.q
+count[2] <= jk_ff:ff2.q
+count[3] <= jk_ff:ff3.q
+count[4] <= jk_ff:ff4.q
+limit <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:f_counter|debouncer:deb
+clk => button_out~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => button_sync_1.CLK
+clk => button_sync_0.CLK
+rst_n => button_out~reg0.ACLR
+rst_n => counter[0].ACLR
+rst_n => counter[1].ACLR
+rst_n => counter[2].ACLR
+rst_n => counter[3].ACLR
+rst_n => counter[4].ACLR
+rst_n => counter[5].ACLR
+rst_n => counter[6].ACLR
+rst_n => counter[7].ACLR
+rst_n => counter[8].ACLR
+rst_n => counter[9].ACLR
+rst_n => counter[10].ACLR
+rst_n => counter[11].ACLR
+rst_n => counter[12].ACLR
+rst_n => counter[13].ACLR
+rst_n => counter[14].ACLR
+rst_n => counter[15].ACLR
+rst_n => counter[16].ACLR
+rst_n => counter[17].ACLR
+rst_n => counter[18].ACLR
+rst_n => counter[19].ACLR
+rst_n => button_sync_1.ACLR
+rst_n => button_sync_0.ACLR
+button_in => button_sync_0.DATAIN
+button_out <= button_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:f_counter|jk_ff:ff0
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:f_counter|jk_ff:ff1
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:f_counter|jk_ff:ff2
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:f_counter|jk_ff:ff3
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:f_counter|jk_ff:ff4
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:t_counter
+trigger => trigger.IN1
+reset => n_reset.IN6
+clk => clk.IN1
+count[0] <= jk_ff:ff0.q
+count[1] <= jk_ff:ff1.q
+count[2] <= jk_ff:ff2.q
+count[3] <= jk_ff:ff3.q
+count[4] <= jk_ff:ff4.q
+limit <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:t_counter|debouncer:deb
+clk => button_out~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => button_sync_1.CLK
+clk => button_sync_0.CLK
+rst_n => button_out~reg0.ACLR
+rst_n => counter[0].ACLR
+rst_n => counter[1].ACLR
+rst_n => counter[2].ACLR
+rst_n => counter[3].ACLR
+rst_n => counter[4].ACLR
+rst_n => counter[5].ACLR
+rst_n => counter[6].ACLR
+rst_n => counter[7].ACLR
+rst_n => counter[8].ACLR
+rst_n => counter[9].ACLR
+rst_n => counter[10].ACLR
+rst_n => counter[11].ACLR
+rst_n => counter[12].ACLR
+rst_n => counter[13].ACLR
+rst_n => counter[14].ACLR
+rst_n => counter[15].ACLR
+rst_n => counter[16].ACLR
+rst_n => counter[17].ACLR
+rst_n => counter[18].ACLR
+rst_n => counter[19].ACLR
+rst_n => button_sync_1.ACLR
+rst_n => button_sync_0.ACLR
+button_in => button_sync_0.DATAIN
+button_out <= button_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:t_counter|jk_ff:ff0
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:t_counter|jk_ff:ff1
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:t_counter|jk_ff:ff2
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:t_counter|jk_ff:ff3
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:t_counter|jk_ff:ff4
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:p_counter
+trigger => trigger.IN1
+reset => n_reset.IN6
+clk => clk.IN1
+count[0] <= jk_ff:ff0.q
+count[1] <= jk_ff:ff1.q
+count[2] <= jk_ff:ff2.q
+count[3] <= jk_ff:ff3.q
+count[4] <= jk_ff:ff4.q
+limit <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:p_counter|debouncer:deb
+clk => button_out~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => button_sync_1.CLK
+clk => button_sync_0.CLK
+rst_n => button_out~reg0.ACLR
+rst_n => counter[0].ACLR
+rst_n => counter[1].ACLR
+rst_n => counter[2].ACLR
+rst_n => counter[3].ACLR
+rst_n => counter[4].ACLR
+rst_n => counter[5].ACLR
+rst_n => counter[6].ACLR
+rst_n => counter[7].ACLR
+rst_n => counter[8].ACLR
+rst_n => counter[9].ACLR
+rst_n => counter[10].ACLR
+rst_n => counter[11].ACLR
+rst_n => counter[12].ACLR
+rst_n => counter[13].ACLR
+rst_n => counter[14].ACLR
+rst_n => counter[15].ACLR
+rst_n => counter[16].ACLR
+rst_n => counter[17].ACLR
+rst_n => counter[18].ACLR
+rst_n => counter[19].ACLR
+rst_n => button_sync_1.ACLR
+rst_n => button_sync_0.ACLR
+button_in => button_sync_0.DATAIN
+button_out <= button_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:p_counter|jk_ff:ff0
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:p_counter|jk_ff:ff1
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:p_counter|jk_ff:ff2
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:p_counter|jk_ff:ff3
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:p_counter|jk_ff:ff4
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:l_counter
+trigger => trigger.IN1
+reset => n_reset.IN6
+clk => clk.IN1
+count[0] <= jk_ff:ff0.q
+count[1] <= jk_ff:ff1.q
+count[2] <= jk_ff:ff2.q
+count[3] <= jk_ff:ff3.q
+count[4] <= jk_ff:ff4.q
+limit <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:l_counter|debouncer:deb
+clk => button_out~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => button_sync_1.CLK
+clk => button_sync_0.CLK
+rst_n => button_out~reg0.ACLR
+rst_n => counter[0].ACLR
+rst_n => counter[1].ACLR
+rst_n => counter[2].ACLR
+rst_n => counter[3].ACLR
+rst_n => counter[4].ACLR
+rst_n => counter[5].ACLR
+rst_n => counter[6].ACLR
+rst_n => counter[7].ACLR
+rst_n => counter[8].ACLR
+rst_n => counter[9].ACLR
+rst_n => counter[10].ACLR
+rst_n => counter[11].ACLR
+rst_n => counter[12].ACLR
+rst_n => counter[13].ACLR
+rst_n => counter[14].ACLR
+rst_n => counter[15].ACLR
+rst_n => counter[16].ACLR
+rst_n => counter[17].ACLR
+rst_n => counter[18].ACLR
+rst_n => counter[19].ACLR
+rst_n => button_sync_1.ACLR
+rst_n => button_sync_0.ACLR
+button_in => button_sync_0.DATAIN
+button_out <= button_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:l_counter|jk_ff:ff0
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:l_counter|jk_ff:ff1
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:l_counter|jk_ff:ff2
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:l_counter|jk_ff:ff3
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count5bit:l_counter|jk_ff:ff4
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count2bit:clock_painel
+clk => clk.IN1
+count[0] <= jk_ff:ff0.q
+count[1] <= jk_ff:ff1.q
+
+
+|prob2_sys|count2bit:clock_painel|jk_ff:ff0
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|count2bit:clock_painel|jk_ff:ff1
+clk => q~reg0.CLK
+n_reset => q~reg0.ACLR
+j => Mux0.IN2
+k => Mux0.IN3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|mux4i5w:mux_contador
+switch[0] => switch[0].IN5
+switch[1] => switch[1].IN5
+f_count[0] => f_count[0].IN1
+f_count[1] => f_count[1].IN1
+f_count[2] => f_count[2].IN1
+f_count[3] => f_count[3].IN1
+f_count[4] => f_count[4].IN1
+t_count[0] => t_count[0].IN1
+t_count[1] => t_count[1].IN1
+t_count[2] => t_count[2].IN1
+t_count[3] => t_count[3].IN1
+t_count[4] => t_count[4].IN1
+p_count[0] => p_count[0].IN1
+p_count[1] => p_count[1].IN1
+p_count[2] => p_count[2].IN1
+p_count[3] => p_count[3].IN1
+p_count[4] => p_count[4].IN1
+l_count[0] => l_count[0].IN1
+l_count[1] => l_count[1].IN1
+l_count[2] => l_count[2].IN1
+l_count[3] => l_count[3].IN1
+l_count[4] => l_count[4].IN1
+out_count[0] <= mux4i1o:mux_b0.out
+out_count[1] <= mux4i1o:mux_b1.out
+out_count[2] <= mux4i1o:mux_b2.out
+out_count[3] <= mux4i1o:mux_b3.out
+out_count[4] <= mux4i1o:mux_b4.out
+
+
+|prob2_sys|mux4i5w:mux_contador|mux4i1o:mux_b4
+i0 => WideAnd0.IN0
+i1 => WideAnd1.IN0
+i2 => WideAnd2.IN0
+i3 => WideAnd3.IN0
+s1 => WideAnd2.IN1
+s1 => WideAnd3.IN1
+s1 => WideAnd0.IN1
+s1 => WideAnd1.IN1
+s0 => WideAnd1.IN2
+s0 => WideAnd3.IN2
+s0 => WideAnd0.IN2
+s0 => WideAnd2.IN2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|mux4i5w:mux_contador|mux4i1o:mux_b3
+i0 => WideAnd0.IN0
+i1 => WideAnd1.IN0
+i2 => WideAnd2.IN0
+i3 => WideAnd3.IN0
+s1 => WideAnd2.IN1
+s1 => WideAnd3.IN1
+s1 => WideAnd0.IN1
+s1 => WideAnd1.IN1
+s0 => WideAnd1.IN2
+s0 => WideAnd3.IN2
+s0 => WideAnd0.IN2
+s0 => WideAnd2.IN2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|mux4i5w:mux_contador|mux4i1o:mux_b2
+i0 => WideAnd0.IN0
+i1 => WideAnd1.IN0
+i2 => WideAnd2.IN0
+i3 => WideAnd3.IN0
+s1 => WideAnd2.IN1
+s1 => WideAnd3.IN1
+s1 => WideAnd0.IN1
+s1 => WideAnd1.IN1
+s0 => WideAnd1.IN2
+s0 => WideAnd3.IN2
+s0 => WideAnd0.IN2
+s0 => WideAnd2.IN2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|mux4i5w:mux_contador|mux4i1o:mux_b1
+i0 => WideAnd0.IN0
+i1 => WideAnd1.IN0
+i2 => WideAnd2.IN0
+i3 => WideAnd3.IN0
+s1 => WideAnd2.IN1
+s1 => WideAnd3.IN1
+s1 => WideAnd0.IN1
+s1 => WideAnd1.IN1
+s0 => WideAnd1.IN2
+s0 => WideAnd3.IN2
+s0 => WideAnd0.IN2
+s0 => WideAnd2.IN2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|mux4i5w:mux_contador|mux4i1o:mux_b0
+i0 => WideAnd0.IN0
+i1 => WideAnd1.IN0
+i2 => WideAnd2.IN0
+i3 => WideAnd3.IN0
+s1 => WideAnd2.IN1
+s1 => WideAnd3.IN1
+s1 => WideAnd0.IN1
+s1 => WideAnd1.IN1
+s0 => WideAnd1.IN2
+s0 => WideAnd3.IN2
+s0 => WideAnd0.IN2
+s0 => WideAnd2.IN2
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|sensor2disp:display_letra_sensor
+l[0] => L1L0.IN0
+l[0] => L0XnorL1.IN0
+l[0] => NotL1L0.IN0
+l[0] => comb.DATAIN
+l[0] => comb.DATAIN
+l[1] => L1L0.IN1
+l[1] => L0XnorL1.IN1
+l[1] => NotL1L0.IN1
+segs[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+segs[1] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+segs[2] <= <VCC>
+segs[3] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+segs[4] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+segs[5] <= <GND>
+segs[6] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|conv_who_overflow:who_of
+counters[0] => comb.IN0
+counters[0] => comb.IN0
+counters[1] => comb.IN1
+counters[2] => comb.IN1
+counters[3] => ~NO_FANOUT~
+who[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+who[1] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|mux2i2w:show_what_mux
+s => s.IN2
+normal[0] => normal[0].IN1
+normal[1] => normal[1].IN1
+overflow[0] => overflow[0].IN1
+overflow[1] => overflow[1].IN1
+switch_show[0] <= mux2i1w:mux0.out
+switch_show[1] <= mux2i1w:mux1.out
+
+
+|prob2_sys|mux2i2w:show_what_mux|mux2i1w:mux0
+i0 => out0.IN0
+i1 => out1.IN0
+s => out1.IN1
+s => out0.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|mux2i2w:show_what_mux|mux2i1w:mux1
+i0 => out0.IN0
+i1 => out1.IN0
+s => out1.IN1
+s => out0.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|bin2bcd:codificador_bcd
+n[0] => units[0].DATAIN
+n[1] => N2andN1.IN0
+n[1] => N3andN1.IN0
+n[1] => N4andN1.IN0
+n[1] => NotN4andNotN3andN1.IN1
+n[1] => WideAnd0.IN0
+n[1] => N4andNotN2andNotN1.IN1
+n[1] => N3andN2andNotN1.IN1
+n[2] => N3andN2.IN0
+n[2] => NotN4andNotN3andN2.IN1
+n[2] => comb.IN0
+n[2] => N4andNotN2.IN0
+n[2] => WideAnd0.IN1
+n[3] => N2andN1.IN1
+n[3] => N3andN2.IN1
+n[3] => N3andN1.IN1
+n[3] => WideAnd0.IN2
+n[3] => NotN4andNotN3.IN0
+n[4] => N4andNotN2.IN1
+n[4] => N4andN1.IN1
+n[4] => comb.IN1
+n[4] => NotN4andNotN3.IN1
+tens[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+tens[1] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+tens[2] <= <GND>
+tens[3] <= <GND>
+units[0] <= n[0].DB_MAX_OUTPUT_PORT_TYPE
+units[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+units[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+units[3] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|sensor2bin:display_dezenas
+F => FT.IN0
+F => FNotT.IN0
+F => WideAnd0.IN0
+F => WideAnd2.IN0
+F => WideAnd7.IN0
+F => WideAnd8.IN0
+F => NotFT.IN0
+F => NotFL.IN0
+F => NotFNotT.IN0
+F => WideAnd4.IN0
+F => WideAnd5.IN0
+T => FT.IN1
+T => NotFT.IN1
+T => WideAnd1.IN0
+T => WideAnd2.IN1
+T => WideAnd3.IN0
+T => WideAnd7.IN1
+T => FNotT.IN1
+T => NotFNotT.IN1
+T => WideAnd5.IN1
+T => WideAnd6.IN0
+T => WideAnd8.IN1
+P => FTP.IN1
+P => WideAnd0.IN1
+P => WideAnd1.IN1
+P => WideAnd3.IN1
+P => WideAnd4.IN1
+P => NotFNotTP.IN1
+P => WideAnd8.IN2
+P => WideAnd9.IN1
+P => WideAnd10.IN1
+P => NotPL.IN0
+P => NotPNotL.IN0
+P => NotFTNotP.IN1
+P => WideAnd5.IN2
+P => WideAnd6.IN1
+P => WideAnd7.IN2
+L => NotFL.IN1
+L => NotPL.IN1
+L => WideAnd0.IN2
+L => WideAnd1.IN2
+L => WideAnd4.IN2
+L => NotFNotTL.IN1
+L => WideAnd6.IN2
+L => WideAnd7.IN3
+L => WideAnd8.IN3
+L => WideAnd9.IN2
+L => NotPNotL.IN1
+L => WideAnd2.IN2
+L => WideAnd3.IN2
+L => NotFNotTPNotL.IN1
+L => WideAnd10.IN2
+a_out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b_out <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d_out <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e_out <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f_out <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g_out <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|prob2_sys|sensor2bin:display_unidades
+F => FT.IN0
+F => FNotT.IN0
+F => WideAnd0.IN0
+F => WideAnd2.IN0
+F => WideAnd7.IN0
+F => WideAnd8.IN0
+F => NotFT.IN0
+F => NotFL.IN0
+F => NotFNotT.IN0
+F => WideAnd4.IN0
+F => WideAnd5.IN0
+T => FT.IN1
+T => NotFT.IN1
+T => WideAnd1.IN0
+T => WideAnd2.IN1
+T => WideAnd3.IN0
+T => WideAnd7.IN1
+T => FNotT.IN1
+T => NotFNotT.IN1
+T => WideAnd5.IN1
+T => WideAnd6.IN0
+T => WideAnd8.IN1
+P => FTP.IN1
+P => WideAnd0.IN1
+P => WideAnd1.IN1
+P => WideAnd3.IN1
+P => WideAnd4.IN1
+P => NotFNotTP.IN1
+P => WideAnd8.IN2
+P => WideAnd9.IN1
+P => WideAnd10.IN1
+P => NotPL.IN0
+P => NotPNotL.IN0
+P => NotFTNotP.IN1
+P => WideAnd5.IN2
+P => WideAnd6.IN1
+P => WideAnd7.IN2
+L => NotFL.IN1
+L => NotPL.IN1
+L => WideAnd0.IN2
+L => WideAnd1.IN2
+L => WideAnd4.IN2
+L => NotFNotTL.IN1
+L => WideAnd6.IN2
+L => WideAnd7.IN3
+L => WideAnd8.IN3
+L => WideAnd9.IN2
+L => NotPNotL.IN1
+L => WideAnd2.IN2
+L => WideAnd3.IN2
+L => NotFNotTPNotL.IN1
+L => WideAnd10.IN2
+a_out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b_out <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d_out <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e_out <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f_out <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g_out <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+

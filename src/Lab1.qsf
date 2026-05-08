@@ -1,0 +1,126 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2025  Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Altera and sold by Altera or its authorized distributors.  Please
+# refer to the Altera Software License Subscription Agreements 
+# on the Quartus Prime software download page.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+# Date created = 20:18:17  March 18, 2026
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Lab1_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF484C7G
+set_global_assignment -name TOP_LEVEL_ENTITY prob2_sys
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 25.1STD.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:18:17  MARCH 18, 2026"
+set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT NONE -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_location_assignment PIN_E14 -to led0
+set_location_assignment PIN_D14 -to led1
+set_location_assignment PIN_A11 -to led2
+set_location_assignment PIN_B11 -to led3
+set_location_assignment PIN_F15 -to m1_in
+set_location_assignment PIN_B14 -to m0_in
+set_location_assignment PIN_C11 -to f_in
+set_location_assignment PIN_C10 -to t_in
+set_location_assignment PIN_AA7 -to p_in
+set_location_assignment PIN_Y6 -to l_in
+set_global_assignment -name VERILOG_FILE prob2_sys.v
+set_global_assignment -name VERILOG_FILE count5bit.v
+set_global_assignment -name VERILOG_FILE jk_ff.v
+set_global_assignment -name VERILOG_FILE sensor2alert.v
+set_global_assignment -name VERILOG_FILE alert2disp.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VERILOG_FILE sensor2bin.v
+set_global_assignment -name VERILOG_FILE mux4i1o.v
+set_global_assignment -name VERILOG_FILE mux4i7w7o.v
+set_global_assignment -name VERILOG_FILE main.v
+set_global_assignment -name VERILOG_FILE mux4i4w4o.v
+set_global_assignment -name VERILOG_FILE alert2leds.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE bin2bcd.v
+set_global_assignment -name VERILOG_FILE divfreq50m.v
+set_global_assignment -name VERILOG_FILE mux4i5w.v
+set_global_assignment -name VERILOG_FILE count2bit.v
+set_global_assignment -name VERILOG_FILE sensor2disp.v
+set_global_assignment -name VERILOG_FILE conv_who_overflow.v
+set_global_assignment -name VERILOG_FILE mux2i1w.v
+set_global_assignment -name VERILOG_FILE mux2i2w.v
+set_location_assignment PIN_E15 -to d0b_out
+set_location_assignment PIN_C14 -to d0a_out
+set_location_assignment PIN_C16 -to d0d_out
+set_location_assignment PIN_C15 -to d0c_out
+set_location_assignment PIN_E16 -to d0e_out
+set_location_assignment PIN_D17 -to d0f_out
+set_location_assignment PIN_C17 -to d0g_out
+set_location_assignment PIN_B17 -to unidades_display[6]
+set_location_assignment PIN_A18 -to unidades_display[5]
+set_location_assignment PIN_A17 -to unidades_display[4]
+set_location_assignment PIN_C18 -to unidades_display[0]
+set_location_assignment PIN_D18 -to unidades_display[1]
+set_location_assignment PIN_E18 -to unidades_display[2]
+set_location_assignment PIN_B16 -to unidades_display[3]
+set_location_assignment PIN_F21 -to letra_sensor_display[0]
+set_location_assignment PIN_E21 -to letra_sensor_display[2]
+set_location_assignment PIN_B20 -to dezenas_display[0]
+set_location_assignment PIN_A20 -to dezenas_display[1]
+set_location_assignment PIN_B19 -to dezenas_display[2]
+set_location_assignment PIN_A21 -to dezenas_display[3]
+set_location_assignment PIN_B21 -to dezenas_display[4]
+set_location_assignment PIN_C22 -to dezenas_display[5]
+set_location_assignment PIN_B22 -to dezenas_display[6]
+set_location_assignment PIN_E22 -to letra_sensor_display[1]
+set_location_assignment PIN_C19 -to letra_sensor_display[3]
+set_location_assignment PIN_C20 -to letra_sensor_display[4]
+set_location_assignment PIN_D19 -to letra_sensor_display[5]
+set_location_assignment PIN_E17 -to letra_sensor_display[6]
+set_location_assignment PIN_P11 -to fpga_clk
+set_location_assignment PIN_B8 -to reset
+set_location_assignment PIN_D13 -to of_led
+set_location_assignment PIN_A8 -to led_sys
+set_global_assignment -name VERILOG_FILE debouncer.v
+set_global_assignment -name VERILOG_FILE slowclock.v
+set_global_assignment -name VERILOG_FILE est_debouncer.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri May  8 14:32:34 2026
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : Lab1
+Top-level Entity Name : prob2_sys
+Family : MAX 10
+Total logic elements : 260
+    Total combinational functions : 256
+    Dedicated logic registers : 141
+Total registers : 141
+Total pins : 41
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

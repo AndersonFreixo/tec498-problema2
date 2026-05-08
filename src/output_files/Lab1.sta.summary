@@ -1,0 +1,2381 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'fpga_clk'
+Slack : -4.074
+TNS   : -337.339
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff15|q'
+Slack : -0.947
+TNS   : -1.304
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff22|q'
+Slack : -0.929
+TNS   : -1.441
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff20|q'
+Slack : -0.828
+TNS   : -1.228
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff23|q'
+Slack : -0.805
+TNS   : -1.192
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:l_counter|jk_ff:ff1|q'
+Slack : -0.775
+TNS   : -0.775
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:p_counter|debouncer:deb|button_out'
+Slack : -0.732
+TNS   : -0.732
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff16|q'
+Slack : -0.704
+TNS   : -1.312
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff01|q'
+Slack : -0.697
+TNS   : -0.697
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff18|q'
+Slack : -0.689
+TNS   : -1.064
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:p_counter|jk_ff:ff2|q'
+Slack : -0.672
+TNS   : -0.672
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff08|q'
+Slack : -0.611
+TNS   : -1.071
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:f_counter|debouncer:deb|button_out'
+Slack : -0.603
+TNS   : -0.603
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff10|q'
+Slack : -0.591
+TNS   : -0.591
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff14|q'
+Slack : -0.587
+TNS   : -0.766
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:t_counter|jk_ff:ff0|q'
+Slack : -0.577
+TNS   : -0.577
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff24|q'
+Slack : -0.570
+TNS   : -0.779
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff05|q'
+Slack : -0.569
+TNS   : -0.569
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:f_counter|jk_ff:ff0|q'
+Slack : -0.565
+TNS   : -0.565
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:l_counter|jk_ff:ff0|q'
+Slack : -0.556
+TNS   : -0.556
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:t_counter|jk_ff:ff1|q'
+Slack : -0.548
+TNS   : -0.548
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff19|q'
+Slack : -0.546
+TNS   : -0.546
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff02|q'
+Slack : -0.544
+TNS   : -0.544
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff13|q'
+Slack : -0.542
+TNS   : -1.054
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:t_counter|jk_ff:ff2|q'
+Slack : -0.539
+TNS   : -0.539
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff07|q'
+Slack : -0.535
+TNS   : -0.535
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:l_counter|jk_ff:ff2|q'
+Slack : -0.524
+TNS   : -0.524
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff17|q'
+Slack : -0.523
+TNS   : -0.523
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:p_counter|jk_ff:ff1|q'
+Slack : -0.522
+TNS   : -0.522
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff00|q'
+Slack : -0.519
+TNS   : -0.519
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:f_counter|jk_ff:ff2|q'
+Slack : -0.513
+TNS   : -0.513
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff06|q'
+Slack : -0.509
+TNS   : -0.509
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff12|q'
+Slack : -0.501
+TNS   : -0.501
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff09|q'
+Slack : -0.499
+TNS   : -0.499
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:f_counter|jk_ff:ff1|q'
+Slack : -0.480
+TNS   : -0.480
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff21|q'
+Slack : -0.460
+TNS   : -0.823
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff03|q'
+Slack : -0.413
+TNS   : -0.413
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:t_counter|debouncer:deb|button_out'
+Slack : -0.400
+TNS   : -0.400
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:l_counter|debouncer:deb|button_out'
+Slack : -0.375
+TNS   : -0.375
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff11|q'
+Slack : -0.372
+TNS   : -0.372
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:p_counter|jk_ff:ff0|q'
+Slack : -0.363
+TNS   : -0.363
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff04|q'
+Slack : -0.280
+TNS   : -0.280
+
+Type  : Slow 1200mV 85C Model Setup 'count2bit:clock_painel|jk_ff:ff0|q'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:f_counter|jk_ff:ff3|q'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:l_counter|jk_ff:ff3|q'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:p_counter|jk_ff:ff3|q'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'count5bit:t_counter|jk_ff:ff3|q'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'divfreq50m:divisor|jk_ff:ff25|q'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff24|q'
+Slack : 0.027
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff21|q'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff18|q'
+Slack : 0.220
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff14|q'
+Slack : 0.286
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff08|q'
+Slack : 0.307
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff13|q'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:p_counter|jk_ff:ff0|q'
+Slack : 0.364
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count2bit:clock_painel|jk_ff:ff0|q'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:f_counter|jk_ff:ff3|q'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:l_counter|jk_ff:ff3|q'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:p_counter|jk_ff:ff3|q'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:t_counter|jk_ff:ff3|q'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff25|q'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff23|q'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff04|q'
+Slack : 0.412
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fpga_clk'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff11|q'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:l_counter|debouncer:deb|button_out'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff20|q'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:t_counter|debouncer:deb|button_out'
+Slack : 0.478
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff03|q'
+Slack : 0.483
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff15|q'
+Slack : 0.496
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff16|q'
+Slack : 0.562
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff09|q'
+Slack : 0.563
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff00|q'
+Slack : 0.576
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:p_counter|jk_ff:ff1|q'
+Slack : 0.580
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff17|q'
+Slack : 0.584
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff05|q'
+Slack : 0.590
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff02|q'
+Slack : 0.595
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff07|q'
+Slack : 0.597
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:t_counter|jk_ff:ff2|q'
+Slack : 0.602
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff19|q'
+Slack : 0.605
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:l_counter|jk_ff:ff0|q'
+Slack : 0.618
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff06|q'
+Slack : 0.618
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:f_counter|jk_ff:ff0|q'
+Slack : 0.629
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:f_counter|jk_ff:ff2|q'
+Slack : 0.639
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:t_counter|jk_ff:ff0|q'
+Slack : 0.641
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:f_counter|debouncer:deb|button_out'
+Slack : 0.648
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff22|q'
+Slack : 0.654
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff12|q'
+Slack : 0.676
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:f_counter|jk_ff:ff1|q'
+Slack : 0.699
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:p_counter|jk_ff:ff2|q'
+Slack : 0.700
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:p_counter|debouncer:deb|button_out'
+Slack : 0.734
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:t_counter|jk_ff:ff1|q'
+Slack : 0.747
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:l_counter|jk_ff:ff1|q'
+Slack : 0.758
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'count5bit:l_counter|jk_ff:ff2|q'
+Slack : 0.779
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff10|q'
+Slack : 0.797
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfreq50m:divisor|jk_ff:ff01|q'
+Slack : 0.878
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff00|q'
+Slack : -6.884
+TNS   : -6.884
+
+Type  : Slow 1200mV 85C Model Recovery 'fpga_clk'
+Slack : -4.703
+TNS   : -4.703
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff24|q'
+Slack : -3.375
+TNS   : -3.375
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff13|q'
+Slack : -3.311
+TNS   : -3.311
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff02|q'
+Slack : -3.232
+TNS   : -3.232
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff22|q'
+Slack : -3.214
+TNS   : -3.214
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff19|q'
+Slack : -3.173
+TNS   : -3.173
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff07|q'
+Slack : -3.158
+TNS   : -3.158
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff09|q'
+Slack : -3.146
+TNS   : -3.146
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff17|q'
+Slack : -3.117
+TNS   : -3.117
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff03|q'
+Slack : -3.107
+TNS   : -3.107
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff04|q'
+Slack : -3.049
+TNS   : -3.049
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff08|q'
+Slack : -3.046
+TNS   : -3.046
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff20|q'
+Slack : -3.036
+TNS   : -3.036
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff10|q'
+Slack : -3.018
+TNS   : -3.018
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff15|q'
+Slack : -2.990
+TNS   : -2.990
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff11|q'
+Slack : -2.967
+TNS   : -2.967
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff12|q'
+Slack : -2.879
+TNS   : -2.879
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff18|q'
+Slack : -2.853
+TNS   : -2.853
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff06|q'
+Slack : -2.851
+TNS   : -2.851
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff21|q'
+Slack : -2.816
+TNS   : -2.816
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff01|q'
+Slack : -2.810
+TNS   : -2.810
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff25|q'
+Slack : -2.775
+TNS   : -2.775
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff16|q'
+Slack : -2.742
+TNS   : -2.742
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff05|q'
+Slack : -2.725
+TNS   : -2.725
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff23|q'
+Slack : -2.669
+TNS   : -2.669
+
+Type  : Slow 1200mV 85C Model Recovery 'divfreq50m:divisor|jk_ff:ff14|q'
+Slack : -2.586
+TNS   : -2.586
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff14|q'
+Slack : 0.695
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff23|q'
+Slack : 0.753
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff05|q'
+Slack : 0.824
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff16|q'
+Slack : 0.846
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff25|q'
+Slack : 0.892
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff01|q'
+Slack : 0.907
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff21|q'
+Slack : 0.918
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff06|q'
+Slack : 0.955
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff18|q'
+Slack : 0.957
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff12|q'
+Slack : 0.973
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff11|q'
+Slack : 1.080
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff15|q'
+Slack : 1.116
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff10|q'
+Slack : 1.134
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff20|q'
+Slack : 1.148
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff08|q'
+Slack : 1.158
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff04|q'
+Slack : 1.159
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff03|q'
+Slack : 1.219
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff17|q'
+Slack : 1.237
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff09|q'
+Slack : 1.263
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff07|q'
+Slack : 1.275
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff19|q'
+Slack : 1.290
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff22|q'
+Slack : 1.332
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff02|q'
+Slack : 1.346
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff13|q'
+Slack : 1.423
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff24|q'
+Slack : 1.488
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'fpga_clk'
+Slack : 2.125
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'divfreq50m:divisor|jk_ff:ff00|q'
+Slack : 4.808
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fpga_clk'
+Slack : -3.000
+TNS   : -133.479
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff08|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff13|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff14|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff15|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff16|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff18|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff20|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff21|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff22|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff23|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff24|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count2bit:clock_painel|jk_ff:ff0|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:f_counter|debouncer:deb|button_out'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:f_counter|jk_ff:ff0|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:f_counter|jk_ff:ff1|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:f_counter|jk_ff:ff2|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:f_counter|jk_ff:ff3|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:l_counter|debouncer:deb|button_out'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:l_counter|jk_ff:ff0|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:l_counter|jk_ff:ff1|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:l_counter|jk_ff:ff2|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:l_counter|jk_ff:ff3|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:p_counter|debouncer:deb|button_out'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:p_counter|jk_ff:ff0|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:p_counter|jk_ff:ff1|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:p_counter|jk_ff:ff2|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:p_counter|jk_ff:ff3|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:t_counter|debouncer:deb|button_out'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:t_counter|jk_ff:ff0|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:t_counter|jk_ff:ff1|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:t_counter|jk_ff:ff2|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count5bit:t_counter|jk_ff:ff3|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff00|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff01|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff02|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff03|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff04|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff05|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff06|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff07|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff09|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff10|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff11|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff12|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff17|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff19|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff25|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Setup 'fpga_clk'
+Slack : -3.701
+TNS   : -305.533
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff15|q'
+Slack : -0.740
+TNS   : -1.029
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff22|q'
+Slack : -0.733
+TNS   : -1.173
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:l_counter|jk_ff:ff1|q'
+Slack : -0.710
+TNS   : -0.710
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff20|q'
+Slack : -0.629
+TNS   : -0.973
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff23|q'
+Slack : -0.619
+TNS   : -0.975
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff18|q'
+Slack : -0.617
+TNS   : -0.824
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff01|q'
+Slack : -0.614
+TNS   : -0.614
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:p_counter|debouncer:deb|button_out'
+Slack : -0.609
+TNS   : -0.609
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:p_counter|jk_ff:ff2|q'
+Slack : -0.600
+TNS   : -0.600
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff16|q'
+Slack : -0.539
+TNS   : -1.056
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff08|q'
+Slack : -0.525
+TNS   : -0.802
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff10|q'
+Slack : -0.518
+TNS   : -0.518
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff05|q'
+Slack : -0.502
+TNS   : -0.502
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:t_counter|jk_ff:ff0|q'
+Slack : -0.496
+TNS   : -0.496
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff24|q'
+Slack : -0.489
+TNS   : -0.539
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:f_counter|jk_ff:ff0|q'
+Slack : -0.485
+TNS   : -0.485
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:f_counter|debouncer:deb|button_out'
+Slack : -0.479
+TNS   : -0.479
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:t_counter|jk_ff:ff1|q'
+Slack : -0.477
+TNS   : -0.477
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:l_counter|jk_ff:ff0|q'
+Slack : -0.476
+TNS   : -0.476
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff19|q'
+Slack : -0.473
+TNS   : -0.473
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff02|q'
+Slack : -0.469
+TNS   : -0.469
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff13|q'
+Slack : -0.462
+TNS   : -0.794
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff07|q'
+Slack : -0.462
+TNS   : -0.462
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:l_counter|jk_ff:ff2|q'
+Slack : -0.461
+TNS   : -0.461
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:t_counter|jk_ff:ff2|q'
+Slack : -0.457
+TNS   : -0.457
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff17|q'
+Slack : -0.448
+TNS   : -0.448
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:p_counter|jk_ff:ff1|q'
+Slack : -0.447
+TNS   : -0.447
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff00|q'
+Slack : -0.445
+TNS   : -0.445
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff06|q'
+Slack : -0.441
+TNS   : -0.441
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:f_counter|jk_ff:ff2|q'
+Slack : -0.439
+TNS   : -0.439
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff12|q'
+Slack : -0.438
+TNS   : -0.438
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff09|q'
+Slack : -0.425
+TNS   : -0.425
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:f_counter|jk_ff:ff1|q'
+Slack : -0.416
+TNS   : -0.416
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff21|q'
+Slack : -0.407
+TNS   : -0.588
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff14|q'
+Slack : -0.404
+TNS   : -0.555
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff03|q'
+Slack : -0.354
+TNS   : -0.354
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:p_counter|jk_ff:ff0|q'
+Slack : -0.331
+TNS   : -0.331
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff11|q'
+Slack : -0.317
+TNS   : -0.317
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:t_counter|debouncer:deb|button_out'
+Slack : -0.315
+TNS   : -0.315
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:l_counter|debouncer:deb|button_out'
+Slack : -0.289
+TNS   : -0.289
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff04|q'
+Slack : -0.238
+TNS   : -0.238
+
+Type  : Slow 1200mV 0C Model Setup 'count2bit:clock_painel|jk_ff:ff0|q'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:f_counter|jk_ff:ff3|q'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:l_counter|jk_ff:ff3|q'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:p_counter|jk_ff:ff3|q'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'count5bit:t_counter|jk_ff:ff3|q'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff25|q'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff24|q'
+Slack : -0.049
+TNS   : -0.049
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff21|q'
+Slack : 0.111
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff18|q'
+Slack : 0.138
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff08|q'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff13|q'
+Slack : 0.268
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff14|q'
+Slack : 0.283
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count2bit:clock_painel|jk_ff:ff0|q'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:f_counter|jk_ff:ff3|q'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:l_counter|jk_ff:ff3|q'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:p_counter|jk_ff:ff3|q'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:t_counter|jk_ff:ff3|q'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff25|q'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:p_counter|jk_ff:ff0|q'
+Slack : 0.371
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fpga_clk'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff04|q'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff23|q'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:l_counter|debouncer:deb|button_out'
+Slack : 0.406
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff11|q'
+Slack : 0.408
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:t_counter|debouncer:deb|button_out'
+Slack : 0.421
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff20|q'
+Slack : 0.441
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff16|q'
+Slack : 0.460
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff03|q'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff15|q'
+Slack : 0.468
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff09|q'
+Slack : 0.525
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff00|q'
+Slack : 0.540
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:p_counter|jk_ff:ff1|q'
+Slack : 0.542
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff17|q'
+Slack : 0.548
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:t_counter|jk_ff:ff2|q'
+Slack : 0.556
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff02|q'
+Slack : 0.557
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff07|q'
+Slack : 0.559
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff19|q'
+Slack : 0.563
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:f_counter|debouncer:deb|button_out'
+Slack : 0.569
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff05|q'
+Slack : 0.571
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:l_counter|jk_ff:ff0|q'
+Slack : 0.574
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:f_counter|jk_ff:ff0|q'
+Slack : 0.584
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:f_counter|jk_ff:ff2|q'
+Slack : 0.586
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff06|q'
+Slack : 0.593
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:t_counter|jk_ff:ff0|q'
+Slack : 0.595
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff22|q'
+Slack : 0.601
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:p_counter|debouncer:deb|button_out'
+Slack : 0.648
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff12|q'
+Slack : 0.656
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:p_counter|jk_ff:ff2|q'
+Slack : 0.657
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:f_counter|jk_ff:ff1|q'
+Slack : 0.674
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:t_counter|jk_ff:ff1|q'
+Slack : 0.708
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:l_counter|jk_ff:ff1|q'
+Slack : 0.722
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'count5bit:l_counter|jk_ff:ff2|q'
+Slack : 0.728
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff10|q'
+Slack : 0.753
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff01|q'
+Slack : 0.830
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff00|q'
+Slack : -6.329
+TNS   : -6.329
+
+Type  : Slow 1200mV 0C Model Recovery 'fpga_clk'
+Slack : -4.364
+TNS   : -4.364
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff24|q'
+Slack : -2.938
+TNS   : -2.938
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff13|q'
+Slack : -2.872
+TNS   : -2.872
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff02|q'
+Slack : -2.809
+TNS   : -2.809
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff22|q'
+Slack : -2.801
+TNS   : -2.801
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff19|q'
+Slack : -2.766
+TNS   : -2.766
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff07|q'
+Slack : -2.755
+TNS   : -2.755
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff09|q'
+Slack : -2.751
+TNS   : -2.751
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff17|q'
+Slack : -2.727
+TNS   : -2.727
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff03|q'
+Slack : -2.718
+TNS   : -2.718
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff04|q'
+Slack : -2.670
+TNS   : -2.670
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff08|q'
+Slack : -2.668
+TNS   : -2.668
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff20|q'
+Slack : -2.641
+TNS   : -2.641
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff10|q'
+Slack : -2.638
+TNS   : -2.638
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff11|q'
+Slack : -2.593
+TNS   : -2.593
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff15|q'
+Slack : -2.592
+TNS   : -2.592
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff12|q'
+Slack : -2.499
+TNS   : -2.499
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff06|q'
+Slack : -2.483
+TNS   : -2.483
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff18|q'
+Slack : -2.479
+TNS   : -2.479
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff21|q'
+Slack : -2.456
+TNS   : -2.456
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff01|q'
+Slack : -2.433
+TNS   : -2.433
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff25|q'
+Slack : -2.405
+TNS   : -2.405
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff16|q'
+Slack : -2.398
+TNS   : -2.398
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff05|q'
+Slack : -2.364
+TNS   : -2.364
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff23|q'
+Slack : -2.315
+TNS   : -2.315
+
+Type  : Slow 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff14|q'
+Slack : -2.238
+TNS   : -2.238
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff14|q'
+Slack : 0.627
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff23|q'
+Slack : 0.681
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff05|q'
+Slack : 0.739
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff16|q'
+Slack : 0.761
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff25|q'
+Slack : 0.793
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff01|q'
+Slack : 0.810
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff21|q'
+Slack : 0.822
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff18|q'
+Slack : 0.849
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff06|q'
+Slack : 0.857
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff12|q'
+Slack : 0.875
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff11|q'
+Slack : 0.973
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff15|q'
+Slack : 0.996
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff10|q'
+Slack : 1.019
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff20|q'
+Slack : 1.028
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff08|q'
+Slack : 1.044
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff04|q'
+Slack : 1.046
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff03|q'
+Slack : 1.097
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff17|q'
+Slack : 1.103
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff09|q'
+Slack : 1.130
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff07|q'
+Slack : 1.140
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff19|q'
+Slack : 1.148
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff22|q'
+Slack : 1.181
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff02|q'
+Slack : 1.202
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff13|q'
+Slack : 1.264
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff24|q'
+Slack : 1.330
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'fpga_clk'
+Slack : 2.043
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff00|q'
+Slack : 4.303
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fpga_clk'
+Slack : -3.000
+TNS   : -133.479
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff08|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff13|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff14|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff15|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff16|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff18|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff20|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff21|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff22|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff23|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff24|q'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count2bit:clock_painel|jk_ff:ff0|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:f_counter|debouncer:deb|button_out'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:f_counter|jk_ff:ff0|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:f_counter|jk_ff:ff1|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:f_counter|jk_ff:ff2|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:f_counter|jk_ff:ff3|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:l_counter|debouncer:deb|button_out'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:l_counter|jk_ff:ff0|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:l_counter|jk_ff:ff1|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:l_counter|jk_ff:ff2|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:l_counter|jk_ff:ff3|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:p_counter|debouncer:deb|button_out'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:p_counter|jk_ff:ff0|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:p_counter|jk_ff:ff1|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:p_counter|jk_ff:ff2|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:p_counter|jk_ff:ff3|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:t_counter|debouncer:deb|button_out'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:t_counter|jk_ff:ff0|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:t_counter|jk_ff:ff1|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:t_counter|jk_ff:ff2|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count5bit:t_counter|jk_ff:ff3|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff00|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff01|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff02|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff03|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff04|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff05|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff06|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff07|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff09|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff10|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff11|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff12|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff17|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff19|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff25|q'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Fast 1200mV 0C Model Setup 'fpga_clk'
+Slack : -1.231
+TNS   : -97.279
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff15|q'
+Slack : -0.232
+TNS   : -0.232
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff22|q'
+Slack : -0.217
+TNS   : -0.217
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff20|q'
+Slack : -0.186
+TNS   : -0.186
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff23|q'
+Slack : -0.175
+TNS   : -0.175
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff16|q'
+Slack : -0.146
+TNS   : -0.146
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff14|q'
+Slack : -0.096
+TNS   : -0.096
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff13|q'
+Slack : -0.056
+TNS   : -0.056
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff08|q'
+Slack : -0.038
+TNS   : -0.038
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff18|q'
+Slack : -0.007
+TNS   : -0.007
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff21|q'
+Slack : -0.002
+TNS   : -0.002
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:p_counter|debouncer:deb|button_out'
+Slack : -0.001
+TNS   : -0.001
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:l_counter|jk_ff:ff1|q'
+Slack : 0.052
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:f_counter|debouncer:deb|button_out'
+Slack : 0.075
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff24|q'
+Slack : 0.080
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:p_counter|jk_ff:ff2|q'
+Slack : 0.090
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff01|q'
+Slack : 0.097
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:t_counter|jk_ff:ff0|q'
+Slack : 0.105
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:f_counter|jk_ff:ff0|q'
+Slack : 0.112
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:l_counter|jk_ff:ff0|q'
+Slack : 0.117
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff10|q'
+Slack : 0.117
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff02|q'
+Slack : 0.122
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff19|q'
+Slack : 0.123
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:t_counter|jk_ff:ff2|q'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff07|q'
+Slack : 0.128
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:l_counter|jk_ff:ff2|q'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff17|q'
+Slack : 0.133
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:p_counter|jk_ff:ff1|q'
+Slack : 0.134
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:t_counter|jk_ff:ff1|q'
+Slack : 0.134
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:f_counter|jk_ff:ff2|q'
+Slack : 0.135
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff00|q'
+Slack : 0.137
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff05|q'
+Slack : 0.139
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff12|q'
+Slack : 0.139
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff09|q'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:t_counter|debouncer:deb|button_out'
+Slack : 0.149
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:f_counter|jk_ff:ff1|q'
+Slack : 0.154
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff06|q'
+Slack : 0.154
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:l_counter|debouncer:deb|button_out'
+Slack : 0.159
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff03|q'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff11|q'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff04|q'
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:p_counter|jk_ff:ff0|q'
+Slack : 0.249
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count2bit:clock_painel|jk_ff:ff0|q'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:f_counter|jk_ff:ff3|q'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:l_counter|jk_ff:ff3|q'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:p_counter|jk_ff:ff3|q'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'count5bit:t_counter|jk_ff:ff3|q'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'divfreq50m:divisor|jk_ff:ff25|q'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff14|q'
+Slack : 0.034
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:p_counter|jk_ff:ff0|q'
+Slack : 0.049
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff23|q'
+Slack : 0.053
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff11|q'
+Slack : 0.108
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff04|q'
+Slack : 0.110
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff20|q'
+Slack : 0.125
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff03|q'
+Slack : 0.132
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff24|q'
+Slack : 0.134
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff15|q'
+Slack : 0.138
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff05|q'
+Slack : 0.158
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:l_counter|debouncer:deb|button_out'
+Slack : 0.164
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fpga_clk'
+Slack : 0.166
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count2bit:clock_painel|jk_ff:ff0|q'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:f_counter|jk_ff:ff3|q'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:l_counter|jk_ff:ff3|q'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:p_counter|jk_ff:ff3|q'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:t_counter|jk_ff:ff3|q'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff25|q'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff06|q'
+Slack : 0.172
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff09|q'
+Slack : 0.175
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:t_counter|debouncer:deb|button_out'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff00|q'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:p_counter|jk_ff:ff1|q'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff17|q'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff07|q'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff02|q'
+Slack : 0.189
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff19|q'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff13|q'
+Slack : 0.192
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff16|q'
+Slack : 0.192
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:t_counter|jk_ff:ff2|q'
+Slack : 0.195
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff12|q'
+Slack : 0.200
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:l_counter|jk_ff:ff0|q'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:f_counter|jk_ff:ff0|q'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:f_counter|jk_ff:ff1|q'
+Slack : 0.212
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:p_counter|jk_ff:ff2|q'
+Slack : 0.212
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:t_counter|jk_ff:ff0|q'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:f_counter|jk_ff:ff2|q'
+Slack : 0.219
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff18|q'
+Slack : 0.219
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff21|q'
+Slack : 0.222
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:l_counter|jk_ff:ff1|q'
+Slack : 0.226
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff22|q'
+Slack : 0.227
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:t_counter|jk_ff:ff1|q'
+Slack : 0.229
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:f_counter|debouncer:deb|button_out'
+Slack : 0.236
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff10|q'
+Slack : 0.252
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:l_counter|jk_ff:ff2|q'
+Slack : 0.262
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff08|q'
+Slack : 0.263
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfreq50m:divisor|jk_ff:ff01|q'
+Slack : 0.264
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'count5bit:p_counter|debouncer:deb|button_out'
+Slack : 0.292
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff00|q'
+Slack : -2.779
+TNS   : -2.779
+
+Type  : Fast 1200mV 0C Model Recovery 'fpga_clk'
+Slack : -1.955
+TNS   : -1.955
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff24|q'
+Slack : -1.017
+TNS   : -1.017
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff13|q'
+Slack : -0.972
+TNS   : -0.972
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff02|q'
+Slack : -0.941
+TNS   : -0.941
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff22|q'
+Slack : -0.923
+TNS   : -0.923
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff19|q'
+Slack : -0.902
+TNS   : -0.902
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff07|q'
+Slack : -0.900
+TNS   : -0.900
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff09|q'
+Slack : -0.897
+TNS   : -0.897
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff17|q'
+Slack : -0.882
+TNS   : -0.882
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff03|q'
+Slack : -0.880
+TNS   : -0.880
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff04|q'
+Slack : -0.852
+TNS   : -0.852
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff08|q'
+Slack : -0.848
+TNS   : -0.848
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff20|q'
+Slack : -0.840
+TNS   : -0.840
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff10|q'
+Slack : -0.832
+TNS   : -0.832
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff15|q'
+Slack : -0.818
+TNS   : -0.818
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff11|q'
+Slack : -0.807
+TNS   : -0.807
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff12|q'
+Slack : -0.761
+TNS   : -0.761
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff06|q'
+Slack : -0.752
+TNS   : -0.752
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff18|q'
+Slack : -0.747
+TNS   : -0.747
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff01|q'
+Slack : -0.728
+TNS   : -0.728
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff21|q'
+Slack : -0.727
+TNS   : -0.727
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff16|q'
+Slack : -0.700
+TNS   : -0.700
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff25|q'
+Slack : -0.700
+TNS   : -0.700
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff05|q'
+Slack : -0.687
+TNS   : -0.687
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff23|q'
+Slack : -0.662
+TNS   : -0.662
+
+Type  : Fast 1200mV 0C Model Recovery 'divfreq50m:divisor|jk_ff:ff14|q'
+Slack : -0.624
+TNS   : -0.624
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff14|q'
+Slack : 0.281
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff23|q'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff05|q'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff16|q'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff25|q'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff01|q'
+Slack : 0.378
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff21|q'
+Slack : 0.380
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff18|q'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff06|q'
+Slack : 0.406
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff12|q'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff11|q'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff15|q'
+Slack : 0.483
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff10|q'
+Slack : 0.491
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff20|q'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff08|q'
+Slack : 0.506
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff04|q'
+Slack : 0.509
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff03|q'
+Slack : 0.538
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff17|q'
+Slack : 0.543
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff09|q'
+Slack : 0.557
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff07|q'
+Slack : 0.560
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff19|q'
+Slack : 0.562
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff22|q'
+Slack : 0.584
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff02|q'
+Slack : 0.599
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff13|q'
+Slack : 0.631
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'fpga_clk'
+Slack : 0.661
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff24|q'
+Slack : 0.674
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'divfreq50m:divisor|jk_ff:ff00|q'
+Slack : 2.364
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fpga_clk'
+Slack : -3.000
+TNS   : -99.163
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff08|q'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff13|q'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff14|q'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff15|q'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff16|q'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff18|q'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff20|q'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff21|q'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff22|q'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff23|q'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff24|q'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count2bit:clock_painel|jk_ff:ff0|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:f_counter|debouncer:deb|button_out'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:f_counter|jk_ff:ff0|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:f_counter|jk_ff:ff1|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:f_counter|jk_ff:ff2|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:f_counter|jk_ff:ff3|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:l_counter|debouncer:deb|button_out'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:l_counter|jk_ff:ff0|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:l_counter|jk_ff:ff1|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:l_counter|jk_ff:ff2|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:l_counter|jk_ff:ff3|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:p_counter|debouncer:deb|button_out'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:p_counter|jk_ff:ff0|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:p_counter|jk_ff:ff1|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:p_counter|jk_ff:ff2|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:p_counter|jk_ff:ff3|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:t_counter|debouncer:deb|button_out'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:t_counter|jk_ff:ff0|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:t_counter|jk_ff:ff1|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:t_counter|jk_ff:ff2|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count5bit:t_counter|jk_ff:ff3|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff00|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff01|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff02|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff03|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff04|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff05|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff06|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff07|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff09|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff10|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff11|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff12|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff17|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff19|q'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfreq50m:divisor|jk_ff:ff25|q'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

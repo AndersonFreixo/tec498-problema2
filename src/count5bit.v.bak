@@ -1,0 +1,49 @@
+module count5bit(    
+    input trigger, reset, 					            
+    output q4,q3,q2,q1,q0, limit  
+);
+
+jk_ff ff4 (
+	. j (1'b1),
+	. k (1'b1),
+	. reset(reset),	
+	. clk(q3),	
+	. q(q4)
+);
+
+jk_ff ff3 (
+	. j (1'b1),
+	. k (1'b1),
+	. clk(q2),	
+	. reset(reset),	
+	. q(q3)
+);
+
+jk_ff ff2 (
+	. j (1'b1),
+	. k (1'b1),
+	. clk(q1),
+	. reset(reset),	
+	. q(q2)
+);
+
+jk_ff ff1 (
+	. j (1'b1),
+	. k (1'b1),
+	. clk(q0),	
+	. reset(reset),	
+	. q(q1)
+);
+
+
+jk_ff ff0 (
+	. j (1'b1),
+	. k (1'b1),
+	. clk(trigger),	
+	. reset(reset),	
+	. q(q0)
+);
+
+and(limit, q4, q2, q0);
+
+endmodule

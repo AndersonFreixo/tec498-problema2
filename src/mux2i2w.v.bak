@@ -1,0 +1,22 @@
+module mux2i2w(    
+    input s, 
+    input [1:0] clock,
+	 input [1:0] overflow,
+	 output [1:0] sensor
+);
+
+mux2i1w mux0 (
+	. i0(clock[0]),
+	. i1(overflow[0]),
+	. s(s),
+	. out(sensor[0])
+);
+
+mux2i1w mux1 (
+	. i0(clock[1]),
+	. i1(overflow[1]),
+	. s(s),
+	. out(sensor[1])
+);
+
+endmodule

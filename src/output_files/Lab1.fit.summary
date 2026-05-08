@@ -1,0 +1,18 @@
+Fitter Status : Successful - Fri May  8 14:32:44 2026
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : Lab1
+Top-level Entity Name : prob2_sys
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 311 / 49,760 ( < 1 % )
+    Total combinational functions : 257 / 49,760 ( < 1 % )
+    Dedicated logic registers : 141 / 49,760 ( < 1 % )
+Total registers : 141
+Total pins : 41 / 360 ( 11 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,677,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

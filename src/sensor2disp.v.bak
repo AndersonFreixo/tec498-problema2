@@ -1,0 +1,59 @@
+module sensor2disp(    
+    input F_in, T_in, P_in, L_in, 					             //sensores
+    output  a_out, b_out, c_out, d_out, e_out, f_out, g_out  //bits de saida, do MSB ao LSB
+);
+
+//Condiçoes e prioridades 
+//N: L & ~F & ~T 			0000
+//L: ~F & ~T & ~P & ~L  0001
+//I: P & ~L & ~F & ~T   0010
+//T: T & ~F & ~P			0011
+//H: ~F & T & P & ~L		0100
+//G: F & L & ~T			0101
+//C: F & ~L & ~T			0110
+//A: F & T & ~P			0111
+//F: F & T & P				1000
+
+wire NotL, NotT, notP, NotF;
+wire IsF, IsA, IsC, IsG, IsH, IsT, IsI, IsL, IsN; 
+wire dumbW;
+not (NotL, L_in);
+not (NotT, T_in);
+not (NotP, P_in);
+not (NotF, F_in);
+
+//qual codigo de alerta foi detectado?
+and (IsN, L_in, NotF, NotT);
+and (IsL, NotF, NotT, NotP, NotL);
+and (IsI, P_in, NotL, NotF, NotT);
+and (IsT, T_in, NotF, NotP);
+and (IsH, NotF, T_in, P_in, NotL);
+and (IsG, F_in, L_in, NotT);
+and (IsC, F_in, NotL, NotT);
+and (IsA, F_in, T_in, NotP);
+and (IsF, F_in, T_in, P_in); 
+
+or (AL3_out, IsF, dumbW); 			 //AL3 bit 3
+or (AL2_out, IsA, IsC, IsG, IsH); //AL2 bit 2
+or (AL1_out, IsA, IsC, IsT, IsI); //AL1 bit 1
+or (AL0_out, IsL, IsT, IsG, IsA); //AL0 bit 0
+
+endmodule
+
+//F T	P L	HEX	ALERT	CODIGO
+//0 0	0 0	0	     L	0001
+//0 0	0 1	1       N	0000
+//0 0	1 0	2       I	0010
+//0 0	1 1	3	     N	0000
+//0 1	0 0	4       T	0011
+//0 1	0 1	5       T	0011
+//0 1	1 0	6       H	0100
+//0 1	1 1	7	     T	0011
+//1 0	0 0	8	     C	0110
+//1 0	0 1	9	     G	0101
+//1 0	1 0	A	     C	0110
+//1 0	1 1	B	     G	0101
+//1 1	0 0	C	     A	0111
+//1 1	0 1	D	     A	0111
+//1 1	1 0	E	     F	1000
+//1 1	1 1	F	     F	1000
